@@ -1,19 +1,15 @@
 Continue my SGA ENGINEERS website redesign.
 
-I started Grok from this folder (workspace):
-C:\Users\JaredSinger\.grok\bin\sgaengineers-website\
+EDIT workspace (day-to-day with Grok):
+C:\Users\JaredSinger\OneDrive - SGA ENGINEERS\Documents\.grok\bin\sgaengineers-website\
 
-WORKFLOW (two folders):
-- EDIT HERE (day-to-day with Grok): C:\Users\JaredSinger\.grok\bin\sgaengineers-website\
-- OFFICIAL copy (version we upload / keep as the release snapshot):
-  C:\Users\JaredSinger\SGA ENGINEERS\SGA ENGINEERS - Fileshare\Marketing\Website\JFS Playground\2026-07-15\
-- Keep editing the local .bin site. When ready to “lock in” a version for upload, copy/sync
-  from .bin → the JFS Playground dated folder (or a new dated folder if starting a new snapshot).
-- GitHub/Vercel can still be wired from either copy; treat JFS Playground as the official
-  marketing-fileshare source of truth for what we upload.
+OFFICIAL playground snapshot (marketing fileshare release copy):
+C:\Users\JaredSinger\SGA ENGINEERS\SGA ENGINEERS - Fileshare\Marketing\Website\JFS Playground\2026-07-15\
 
 SOURCE / LIVE SITE:
 https://www.sgaengineers.com/
+GitHub: https://github.com/zinger084/sgaengineers-website.git (branch main)
+Vercel: auto-deploys from GitHub push
 
 BRAND:
 - Font: Candara site-wide
@@ -30,9 +26,9 @@ BRAND:
 WHAT’S BUILT:
 - Static multi-page site: index, expertise, markets, projects, about, careers, contact
 - 20 market detail pages under markets/
-- Conversion content (who hires us, outcomes, process, FAQ)
-- Partner headshots on About (assets/team/)
-- Selected Work (projects.html): anonymized writeups from Marketing/Project Writeups - never publish owner/facility names
+- Full team on About (principals + staff); headshots for founders; initials for others
+- Firm credentials, PE states, Mentor/Innovate/Lead from firm profile
+- Selected Work: anonymized writeups only - never publish owner/facility names
 - Polish: hero animations, scroll reveals, stagger, refined header, logos, brand colors
 - Market generator: js/generate_markets.py
 
@@ -45,20 +41,25 @@ GOALS:
 Contact: engineer@sgaengineers.com · info@sgaengineers.com
 Tagline: Design with Integrity.
 
-PUBLISH (simple, for Jared):
-1. Edit in .bin with Grok
-2. When happy: robocopy .bin → official JFS Playground dated folder (skip .git)
-3. Commit + push from .bin to GitHub: https://github.com/zinger084/sgaengineers-website.git (branch main)
-4. Vercel is already connected - a push updates the live site. Hard-refresh (Ctrl+F5) if old text shows.
-5. Explain changes in plain baby-steps language when asked - Jared is learning this stack.
+PUBLISH WORKFLOW (IMPORTANT - ALWAYS FOLLOW):
+1. Edit only in the OneDrive .bin site with Grok
+2. ALWAYS ASK Jared first before publishing. Do not copy to playground or push without a clear yes.
+3. After Jared says yes to publish:
+   a. Copy/sync .bin website → JFS Playground dated folder (mirror site files; keep playground .git)
+   b. Commit + push FROM the playground folder to GitHub (main)
+   c. Vercel auto-updates from that push
+4. Hard-refresh (Ctrl+F5) if old text shows
+5. Explain changes in plain baby-steps language when asked - Jared is learning this stack
 
-LAST SESSION (2026-07-15):
-- Resumed site; user disliked tech slang “ship projects” (we carefully engineer/design, not “ship”)
-- Homepage h2 updated to: “Built for the people who design and deliver proven results”
-- Documented two-folder workflow (edit .bin / official Playground)
-- Synced .bin → JFS Playground\2026-07-15
-- Committed and pushed: ced8f4a “Update homepage headline and document publish workflow”
-- Vercel deploy confirmed working by Jared
-- Quit for the day; pick up here next time
+Do NOT push to GitHub/Vercel from the .bin edit folder once playground is the publish source.
+Do NOT publish on Jared’s behalf without asking.
+
+LAST SESSION (2026-07-16):
+- Resumed site from OneDrive .bin path
+- Smaller circular headshots on About
+- Expanded About: full team, firm credentials, Mentor/Innovate/Lead
+- Strengthened projects.html with more anonymized case cards
+- Pushed once from .bin (a13305f) before switching to playground-as-publish-source rule
+- Jared rule: always ask before playground copy + GitHub/Vercel publish
 
 Read the project and wait for my next request.
