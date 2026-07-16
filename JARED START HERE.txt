@@ -45,4 +45,20 @@ GOALS:
 Contact: engineer@sgaengineers.com · info@sgaengineers.com
 Tagline: Design with Integrity.
 
+PUBLISH (simple, for Jared):
+1. Edit in .bin with Grok
+2. When happy: robocopy .bin → official JFS Playground dated folder (skip .git)
+3. Commit + push from .bin to GitHub: https://github.com/zinger084/sgaengineers-website.git (branch main)
+4. Vercel is already connected - a push updates the live site. Hard-refresh (Ctrl+F5) if old text shows.
+5. Explain changes in plain baby-steps language when asked - Jared is learning this stack.
+
+LAST SESSION (2026-07-15):
+- Resumed site; user disliked tech slang “ship projects” (we carefully engineer/design, not “ship”)
+- Homepage h2 updated to: “Built for the people who design and deliver proven results”
+- Documented two-folder workflow (edit .bin / official Playground)
+- Synced .bin → JFS Playground\2026-07-15
+- Committed and pushed: ced8f4a “Update homepage headline and document publish workflow”
+- Vercel deploy confirmed working by Jared
+- Quit for the day; pick up here next time
+
 Read the project and wait for my next request.

@@ -1334,6 +1334,11 @@ a.text-link:hover {
   gap: 1.5rem;
 }
 
+.team-grid--staff {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0.25rem;
+}
+
 .team-card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -1344,12 +1349,28 @@ a.text-link:hover {
 }
 
 .team-card__photo {
+  /* ~1/3 of previous full-card headshots; centered above the bio */
+  width: 11rem;
+  max-width: 33%;
+  min-width: 7.5rem;
   aspect-ratio: 1 / 1;
+  margin: 1.75rem auto 0;
+  border-radius: 50%;
+  overflow: hidden;
   background:
     linear-gradient(145deg, #3a3a3a, #1a1a1a 55%, #0a4d7a 120%);
   display: grid;
   place-items: center;
   color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 3px var(--white), 0 0 0 4px var(--line);
+}
+
+.team-card--compact .team-card__photo {
+  width: 5.5rem;
+  min-width: 5rem;
+  max-width: 5.5rem;
+  margin-top: 1.35rem;
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 3px var(--line);
 }
 
 .team-card__photo img {
@@ -1367,13 +1388,22 @@ a.text-link:hover {
 
 .team-card__initials {
   font-family: var(--font-display);
-  font-size: 3rem;
-  letter-spacing: -0.03em;
-  opacity: 0.85;
+  font-size: 1.65rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  opacity: 0.92;
+}
+
+.team-card--compact .team-card__initials {
+  font-size: 1.35rem;
 }
 
 .team-card__body {
   padding: 1.75rem;
+}
+
+.team-card--compact .team-card__body {
+  padding: 1.15rem 1.35rem 1.5rem;
 }
 
 .team-card__role {
@@ -1392,16 +1422,31 @@ a.text-link:hover {
   letter-spacing: -0.02em;
 }
 
+.team-card--compact h3 {
+  font-size: 1.25rem;
+}
+
 .team-card__creds {
   margin-top: 0.35rem;
   font-size: 0.9rem;
   color: var(--slate);
 }
 
+.team-card--compact .team-card__creds {
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
 .team-card__bio {
   margin-top: 1rem;
   color: var(--slate);
   font-size: 0.98rem;
+}
+
+.team-card--compact .team-card__bio {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .team-card__quote {
@@ -1412,6 +1457,105 @@ a.text-link:hover {
   font-size: 1.05rem;
   line-height: 1.45;
   color: var(--ink);
+}
+
+/* Credentials / firm profile band */
+.cred-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.cred-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem 1.25rem;
+}
+
+.cred-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+}
+
+.cred-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--slate);
+  line-height: 1.5;
+}
+
+.cred-memberships {
+  margin: 1.5rem 0 0;
+  font-size: 0.95rem;
+  color: var(--slate);
+}
+
+.cred-memberships strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.cred-services {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem 2.5rem;
+}
+
+.cred-services h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 0.75rem;
+}
+
+.cred-services ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.cred-services li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.95rem;
+  color: var(--slate);
+  line-height: 1.45;
+}
+
+.cred-services li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.section-head--light .section-title,
+.section-head--light .section-lead {
+  color: inherit;
+}
+
+.section--ink .section-head--light .eyebrow {
+  color: var(--brand-gray, #bfbfbf);
+}
+
+.section--ink .section-head--light .section-title {
+  color: #fff;
+}
+
+.section--ink .section-head--light .section-lead {
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .fun-facts {
@@ -2205,6 +2349,14 @@ a.text-link:hover {
   .practice-examples__grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .team-grid--staff {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cred-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 960px) {
@@ -2580,7 +2732,10 @@ a.text-link:hover {
   .discipline,
   .contact-grid,
   .team-grid,
+  .team-grid--staff,
   .case-grid,
+  .cred-grid,
+  .cred-services,
   .footer-grid {
     grid-template-columns: 1fr;
   }
