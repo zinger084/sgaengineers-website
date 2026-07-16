@@ -1,68 +1,104 @@
 Continue my SGA ENGINEERS website redesign.
 
+HANDOFF FILE (always keep this current):
+- Path: JARED START HERE.txt in the OneDrive edit folder (plain text - opens in Notepad or any editor)
+  C:\Users\JaredSinger\OneDrive - SGA ENGINEERS\Documents\.grok\bin\sgaengineers-website\JARED START HERE.txt
+- START of website work: always READ this file first for rules, paths, and where we left off.
+- END of website work: when Jared says we are done / quitting / pick up later / session over / cya,
+  ALWAYS UPDATE this file before stopping - last commit, what shipped, decisions, open items,
+  and a clear PICK UP HERE block. Do not wait to be asked; treat “we’re done” as the trigger.
+- Optional: after a publish, note the new commit hash here so the next session is accurate.
+
+PICK UP HERE (next website session):
+- Read this file first, open the OneDrive edit workspace, then wait for Jared’s next request.
+- Latest published commit (playground → GitHub main → Vercel): afc240c
+  “Refresh homepage tone and add anonymous partner voice section.”
+  Local (unpublished) edit: homepage hero-1.jpg restored to free Unsplash glass-skyscraper shot.
+- Live preview: https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5) - Vercel still has old hero until publish.
+- Homepage hero is general (tech, speed, flexibility) - NOT data-center-only, NO Canton on home.
+- “What partners notice” anonymous quotes + “Patterns partners keep coming back for” are approved/liked.
+- Contact form uses mailto (FormSubmit failed with Microsoft 365 delivery). Working and liked.
+- Mike Ludwig is NOT on staff - do not add him; headshots folder may still have Mike files.
+- MEDIA POLICY (2026-07-16): Free Unsplash License photos are OK and encouraged for atmospheric /
+  market / hero imagery. Prefer download-to-assets (not hotlink CDN). Still: logos + team headshots
+  stay SGA-only; never invent client photos; never use paid Unsplash+ unless licensed.
+
 EDIT workspace (day-to-day with Grok):
 C:\Users\JaredSinger\OneDrive - SGA ENGINEERS\Documents\.grok\bin\sgaengineers-website\
 
-OFFICIAL playground snapshot (marketing fileshare release copy):
+OFFICIAL playground snapshot (publish from here only):
 C:\Users\JaredSinger\SGA ENGINEERS\SGA ENGINEERS - Fileshare\Marketing\Website\JFS Playground\2026-07-15\
 
-SOURCE / LIVE SITE:
-https://www.sgaengineers.com/
-GitHub: https://github.com/zinger084/sgaengineers-website.git (branch main)
-Vercel: auto-deploys from GitHub push
+SOURCE / LIVE:
+- Legacy public domain: https://www.sgaengineers.com/
+- Redesign on Vercel: https://sgaengineers-website.vercel.app/
+- GitHub: https://github.com/zinger084/sgaengineers-website.git (branch main)
 
-BRAND:
+BRAND / RULES:
 - Font: Candara site-wide
-- Orange: #B62C00
-- Gray: #BFBFBF
-- Bright blue: #0077C8
-- Formal / professional AEC firm look (dark theme, not bright white)
-- Never name other AEC firms on the public website
+- Orange #B62C00 · Gray #BFBFBF · Bright blue #0077C8
+- Formal professional AEC dark theme
+- Never name other AEC firms on the public site
 - Never use em-dashes on the public site
-- English language only on the website (copy, UI, and any text in photos)
-- No copyrighted third-party material: no stock photos (Unsplash/etc.), no other firms' images, no unlicensed content
-- Visuals: SGA logos, SGA team headshots, and brand CSS panels only unless Jared supplies owned project photos
-- Push data centers / mission critical as the top market story
-- Logo (site-wide only): assets/logo/logo-primary-invert.png
-  Source: Marketing\Logo\Logo (with name) no border transparent background close crop invert.png
+- English only (copy, UI, photo text)
+- Media: free Unsplash License photos OK for site atmospherics (heroes, markets, lifestyle, architecture).
+  Prefer local copies under assets/media (download + compress; do not depend on unsplash.com CDN).
+  Still SGA-only for: logos, team headshots, real project photos Jared provides, brand graphics.
+  Do NOT use: paid Unsplash+, Getty/Shutterstock/Adobe stock without a license, or random web scrapes.
+  Prefer professional AEC look (architecture, MEP systems, commercial interiors) over gimmicky stock.
+  Optional photo credit is nice; not required under Unsplash License.
+- Never publish owner/facility/client names unless Jared explicitly approves
+- References: Master\References - use themes and short anonymous role-based quotes only
+  (role + market type; no person or organization names)
+- Homepage: push tech, responsiveness, integration, speed, flexibility (small-firm strengths)
+- Do NOT put Canton, Ohio on the homepage opening/footer; location OK on About/Contact
+- Mission critical / data centers are a strength but must not dominate the first screen
+- Logo site-wide: assets/logo/logo-primary-invert.png
+- Tagline: Design with Integrity.
+- Contact: engineer@sgaengineers.com · info@sgaengineers.com
+- No public main phone number published yet (callback via form if provided)
+- Do not invent phone numbers or street address
 
 WHAT’S BUILT:
-- Static multi-page site: index, expertise, markets, projects, about, careers, contact
-- 20 market detail pages under markets/
-- Full team on About (principals + staff); headshots for founders; initials for others
-- Firm credentials, PE states, Mentor/Innovate/Lead from firm profile
-- Selected Work: anonymized writeups only - never publish owner/facility names
-- Polish: hero animations, scroll reveals, stagger, refined header, logos, brand colors
-- Market generator: js/generate_markets.py
+- Pages: index, expertise, markets (+20 detail pages), projects, about, careers, contact
+- About: full team (Jared, Jason + Brian, Brad, Ryan, Aidan, Caleb) with headshots
+- Firm credentials / PE multi-state / Mentor·Innovate·Lead
+- Selected Work: anonymized case cards
+- Contact: HQ Canton on Contact only, service footprint, next steps, mailto form with copy fallback
+- Media: assets/media (SGA Marketing + free Unsplash downloads), assets/team headshots (SGA only)
+- Homepage: hero skyscraper (Unsplash free, local hero-1.jpg), patterns, “What partners notice” quotes
 
-GOALS:
-- Keep brand colors, Candara, logos, formal tone
-- Improve further when asked (real photos, deploy, content edits)
-- Don’t invent fake project credentials; prefer real SGA content
-- Never name clients/projects on the public site unless explicitly approved
+PUBLISH WORKFLOW (ALWAYS FOLLOW):
+1. Edit only in OneDrive .bin with Grok
+2. ALWAYS ASK Jared before publishing - never copy/push without clear yes
+3. After yes:
+   a. robocopy .bin → JFS Playground\2026-07-15 (keep playground .git; skip copying over .git)
+   b. Commit + push FROM playground to GitHub main
+   c. Vercel auto-deploys
+4. Explain in plain language when asked - Jared is learning the stack
+5. Do NOT push to GitHub from the .bin folder as the normal publish path
 
-Contact: engineer@sgaengineers.com · info@sgaengineers.com
-Tagline: Design with Integrity.
+CONTENT SOURCES (fileshare):
+- Resumes: Master\Resumes
+- Firm profile: Master\Resumes\SGA ENGINEERS Firm Profile*.docx
+- Headshots: Marketing\Headshots
+- Site media: Marketing\Website\Media
+- References: Master\References
 
-PUBLISH WORKFLOW (IMPORTANT - ALWAYS FOLLOW):
-1. Edit only in the OneDrive .bin site with Grok
-2. ALWAYS ASK Jared first before publishing. Do not copy to playground or push without a clear yes.
-3. After Jared says yes to publish:
-   a. Copy/sync .bin website → JFS Playground dated folder (mirror site files; keep playground .git)
-   b. Commit + push FROM the playground folder to GitHub (main)
-   c. Vercel auto-updates from that push
-4. Hard-refresh (Ctrl+F5) if old text shows
-5. Explain changes in plain baby-steps language when asked - Jared is learning this stack
+SUGGESTED NEXT (when Jared is ready - do not start unprompted):
+1. Imagery pass: free Unsplash upgrades for weak market/page photos (keep SGA headshots + real project shots)
+2. Publish current local edits (hero skyscraper + any imagery) when Jared says yes
+3. Firm profile PDF download for pursuits
+4. Public phone if Jared supplies a number
+5. SEO basics (sitemap, robots, OG, favicon)
+6. Consistent footers / privacy line on form
+7. More anonymized case cards or quote polish if wanted
+8. Optional true web form later (Formspree/Web3Forms/M365) - mailto works now
 
-Do NOT push to GitHub/Vercel from the .bin edit folder once playground is the publish source.
-Do NOT publish on Jared’s behalf without asking.
+LAST SESSION NOTES (2026-07-16 ongoing):
+- Prior publish: afc240c (homepage tone + partner voice)
+- Restored homepage hero skyscrapers (Unsplash free, local file); industrial backup kept
+- Jared confirmed free Unsplash is fine and wants it used more where free license applies
+- Brand rule updated: free Unsplash OK; logos/headshots still SGA-only
 
-LAST SESSION (2026-07-16):
-- Resumed site from OneDrive .bin path
-- Smaller circular headshots on About
-- Expanded About: full team, firm credentials, Mentor/Innovate/Lead
-- Strengthened projects.html with more anonymized case cards
-- Pushed once from .bin (a13305f) before switching to playground-as-publish-source rule
-- Jared rule: always ask before playground copy + GitHub/Vercel publish
-
-Read the project and wait for my next request.
+Read this file, confirm context if useful, and wait for Jared’s next request.

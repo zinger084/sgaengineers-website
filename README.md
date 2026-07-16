@@ -34,7 +34,7 @@ Then open `http://localhost:8080`.
  - Bright blue `#0077C8` (nav active, links, secondary buttons)
  - Charcoal / light gray neutrals for a formal professional look
 - **Logo (site-wide):** `assets/logo/logo-primary-invert.png` (close-crop invert wordmark)
-- **Images:** SGA-owned only (logos, team headshots). No third-party stock photography. Brand CSS panels where photos are not available.
+- **Images:** Free Unsplash License photos OK for heroes/markets/atmospherics (download into `assets/media`). Logos and team headshots stay SGA-owned. No paid stock (Unsplash+, Getty, etc.) without a license.
 - **Form:** Client-side form opens email to `engineer@sgaengineers.com` (no backend required)
 
 ## Deploy options
@@ -60,7 +60,7 @@ Homepage and key pages include copy aimed at people evaluating MEP firms:
 
 ## Suggested next steps
 
-1. Optional: add **SGA-owned project photography** (anonymized as needed) - no stock / third-party copyrighted images  
+1. Optional: upgrade market/page photos with free Unsplash imagery; keep SGA headshots and real project photos where available  
 
 2. Wire contact form to **Formspree**, **Netlify Forms**, or your CRM  
 3. Add **office address / phone** if you want them public  
