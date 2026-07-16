@@ -19,6 +19,9 @@ BRAND:
 - Formal / professional AEC firm look (dark theme, not bright white)
 - Never name other AEC firms on the public website
 - Never use em-dashes on the public site
+- English language only on the website (copy, UI, and any text in photos)
+- No copyrighted third-party material: no stock photos (Unsplash/etc.), no other firms' images, no unlicensed content
+- Visuals: SGA logos, SGA team headshots, and brand CSS panels only unless Jared supplies owned project photos
 - Push data centers / mission critical as the top market story
 - Logo (site-wide only): assets/logo/logo-primary-invert.png
   Source: Marketing\Logo\Logo (with name) no border transparent background close crop invert.png

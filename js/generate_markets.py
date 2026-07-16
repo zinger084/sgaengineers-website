@@ -13,7 +13,7 @@ MARKETS = [
         "meta": "Healthcare MEP engineering, medical gases, infection control systems, and commissioning for hospitals, clinics, and behavioral health.",
         "hero": "Engineering systems that support care, compliance, and continuous operation.",
         "lead": "Healthcare facilities demand precise environmental control, redundant infrastructure, and designs that respect infection prevention, life safety, and renovation in live buildings. SGA brings MEPFT design, medical gas systems, and commissioning experience shaped by clinical performance requirements - not just general commercial practice.",
-        "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/healthcare.jpg",
         "image_alt": "Healthcare facility exterior",
         "intro_title": "Clinical environments. Constructible systems.",
         "intro": [
@@ -48,7 +48,7 @@ MARKETS = [
         "meta": "Industrial MEP engineering for process facilities, specialty exhaust, industrial gases, utilities, and plant infrastructure.",
         "hero": "Plant-ready engineering for process, utility, and production environments.",
         "lead": "Industrial projects reward engineers who understand how systems are installed, maintained, and sequenced around production. SGA designs mechanical, electrical, plumbing, fire, and technology infrastructure for industrial facilities with an eye toward reliability, safety, and real-world constructability.",
-        "image": "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/industrial.jpg",
         "image_alt": "Industrial facility infrastructure",
         "intro_title": "Process-aware building systems",
         "intro": [
@@ -83,7 +83,7 @@ MARKETS = [
         "meta": "MEP engineering for zoos and aquariums - specialty environments, public buildings, and resilient utility systems.",
         "hero": "Specialty environments where animal care, public experience, and building systems meet.",
         "lead": "Zoos and aquariums combine public assembly, education, and highly specialized environmental control. SGA supports MEPFT design and commissioning for these unique facilities - balancing guest comfort, staff operations, and the specialized systems animal care depends on.",
-        "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/zoos-aquariums.jpg",
         "image_alt": "Aquarium and aquatic environment",
         "intro_title": "Unique buildings, integrated engineering",
         "intro": [
@@ -118,7 +118,7 @@ MARKETS = [
         "meta": "K-12 school MEP engineering - HVAC, power, plumbing, fire, technology, and commissioning for classrooms and campus renovations.",
         "hero": "Healthy, efficient learning environments that districts can afford to operate.",
         "lead": "K-12 projects need durable systems, clear budgets, and designs that work for facility staff long after ribbon-cutting. SGA provides MEPFT design and commissioning for new schools, additions, and renovations - balancing indoor air quality, energy, safety, and constructability.",
-        "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/k-12.jpg",
         "image_alt": "Modern school building",
         "intro_title": "Schools that perform for students and staff",
         "intro": [
@@ -153,7 +153,7 @@ MARKETS = [
         "meta": "DoD and federal MEP engineering - compliant design, documentation, coordination, and construction administration for mission facilities.",
         "hero": "Disciplined engineering for mission facilities that demand accountability.",
         "lead": "Department of Defense and federal work requires rigorous documentation, coordination, and respect for security, standards, and schedule. SGA supports MEPFT design and construction administration for facilities where compliance and reliability are non-negotiable.",
-        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/department-of-defense.jpg",
         "image_alt": "Professional project planning and documentation",
         "intro_title": "Standards-driven delivery",
         "intro": [
@@ -188,7 +188,7 @@ MARKETS = [
         "meta": "Building commissioning services - BCxP-informed Cx, functional testing, energy optimization, FCAs, and digital documentation.",
         "hero": "Verify performance. Reduce risk. Close the gap between design intent and operation.",
         "lead": "Commissioning is how owners gain confidence that systems work as intended. SGA provides commissioning and related services led with BCxP credentials - across design-phase planning, construction, functional testing, and ongoing optimization.",
-        "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/commissioning.jpg",
         "image_alt": "Engineer reviewing building systems",
         "intro_title": "Commissioning with design fluency",
         "intro": [
@@ -225,7 +225,7 @@ MARKETS = [
         "meta": "Hospitality MEP engineering for hotels, resorts, and guest-experience facilities - comfort, reliability, and efficient operations.",
         "hero": "Guest comfort and operational efficiency, engineered to work together.",
         "lead": "Hospitality projects live or die on guest experience and operating cost. SGA designs mechanical, electrical, plumbing, fire, and technology systems that support comfort, brand standards, and maintainable back-of-house operations.",
-        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/hospitality.jpg",
         "image_alt": "Hospitality and hotel environment",
         "intro_title": "Front-of-house feel, back-of-house rigor",
         "intro": [
@@ -260,7 +260,7 @@ MARKETS = [
         "meta": "Food manufacturing MEP engineering - process utilities, hygiene-aware environments, ammonia plants, and production infrastructure.",
         "hero": "Production environments where hygiene, utilities, and uptime are non-negotiable.",
         "lead": "Food and beverage manufacturing requires disciplined environmental control, process-adjacent utilities, and robust infrastructure. SGA provides MEPFT design for food manufacturing facilities - including specialty systems such as ammonia chilled water plants, industrial gases, and temperature-controlled storage.",
-        "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/food-manufacturing.jpg",
         "image_alt": "Manufacturing and production facility",
         "intro_title": "Process-informed building engineering",
         "intro": [
@@ -295,7 +295,7 @@ MARKETS = [
         "meta": "Municipal MEP engineering for civic buildings, public facilities, and community infrastructure projects.",
         "hero": "Public facilities engineered for durability, accessibility, and long service life.",
         "lead": "Municipal projects serve communities for decades. SGA designs MEPFT systems for civic and public facilities with durable, maintainable solutions - and clear documentation for public procurement and construction.",
-        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/municipal.jpg",
         "image_alt": "Civic and public architecture",
         "intro_title": "Stewardship-minded engineering",
         "intro": [
@@ -330,7 +330,7 @@ MARKETS = [
         "meta": "Commercial office and corporate MEP engineering - fit-outs, renovations, core systems, and workplace technology infrastructure.",
         "hero": "Workplaces engineered for performance, flexibility, and total cost of ownership.",
         "lead": "Corporate and commercial projects need efficient cores, comfortable interiors, and infrastructure that adapts as tenants and work patterns change. SGA delivers MEPFT design for offices, corporate facilities, and commercial renovations.",
-        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/corporate-commercial.jpg",
         "image_alt": "Modern commercial office interior",
         "intro_title": "Core and shell to fit-out - done with precision",
         "intro": [
@@ -365,7 +365,7 @@ MARKETS = [
         "meta": "Automation and controls-oriented MEP engineering - BAS integration, industrial controls interfaces, and facility automation infrastructure.",
         "hero": "Controls-aware engineering that makes buildings and processes operable.",
         "lead": "Automation is where design intent becomes daily operation. SGA supports building automation system design and integration, controls coordination, and the electrical/mechanical infrastructure automation depends on - across commercial, industrial, and specialty facilities.",
-        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/automation.jpg",
         "image_alt": "Technology and automation systems",
         "intro_title": "From sequences to systems that run",
         "intro": [
@@ -400,7 +400,7 @@ MARKETS = [
         "meta": "Water and wastewater facility MEP engineering - plant utilities, controls, power reliability, and support systems.",
         "hero": "Critical infrastructure engineering for water and wastewater facilities.",
         "lead": "Water and wastewater plants are 24/7 infrastructure. SGA supports mechanical, electrical, plumbing, fire, technology, and controls design for treatment and related facilities - where reliability, harsh environments, and operational continuity shape every decision.",
-        "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/wastewater.jpg",
         "image_alt": "Industrial water infrastructure",
         "intro_title": "Utility-class rigor",
         "intro": [
@@ -435,7 +435,7 @@ MARKETS = [
         "meta": "Mission critical MEP engineering - data centers, high-reliability power and cooling, UPS, redundancy, and commissioning.",
         "hero": "Reliability engineered for environments where downtime is not an option.",
         "lead": "Mission-critical facilities demand layered redundancy, meticulous coordination, and commissioning that proves performance. SGA designs power, cooling, fire, and technology infrastructure for high-reliability environments - and brings cross-market lessons from healthcare and industrial work into every decision.",
-        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/data-center.jpg",
         "image_alt": "Data center and mission critical infrastructure",
         "intro_title": "Redundancy with constructability",
         "intro": [
@@ -470,7 +470,7 @@ MARKETS = [
         "meta": "Retail MEP engineering for stores, mixed-use retail, and customer-facing facilities - fast schedules and reliable systems.",
         "hero": "Retail environments engineered for brand, comfort, and speed to open.",
         "lead": "Retail projects move quickly and must perform for customers and operators alike. SGA provides MEPFT design for retail and mixed-use commercial spaces - efficient systems, clear documentation, and technology infrastructure that supports modern store operations.",
-        "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/retail.jpg",
         "image_alt": "Retail and commercial storefront environment",
         "intro_title": "Fast, clean, operable",
         "intro": [
@@ -505,7 +505,7 @@ MARKETS = [
         "meta": "EV charging infrastructure engineering - load studies, electrical design, site power planning, and future-ready distribution.",
         "hero": "Charging infrastructure designed for real electrical capacity - not wishful load letters.",
         "lead": "Electric vehicle infrastructure succeeds when electrical engineering is done early and honestly. SGA provides EV charging studies and design, distribution planning, and coordination with site and facility power systems so charging deployments are safe, code-compliant, and expandable.",
-        "image": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/electric-vehicle.jpg",
         "image_alt": "Electric vehicle charging infrastructure",
         "intro_title": "Power-first EV planning",
         "intro": [
@@ -540,7 +540,7 @@ MARKETS = [
         "meta": "Higher education MEP engineering for campuses - labs, classrooms, residence life, central plants, and research-adjacent facilities.",
         "hero": "Campus systems that support teaching, research, and student life.",
         "lead": "Higher education facilities range from classrooms to labs to residence halls - each with different performance demands. SGA provides MEPFT design and commissioning for campus projects, coordinating complex programs with energy, reliability, and maintainability in mind.",
-        "image": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/higher-ed.jpg",
         "image_alt": "University campus building",
         "intro_title": "Campus complexity, clear engineering",
         "intro": [
@@ -575,7 +575,7 @@ MARKETS = [
         "meta": "Transportation facility MEP engineering - terminals, transit support, fleet facilities, and public infrastructure buildings.",
         "hero": "Systems for facilities that keep people and fleets moving.",
         "lead": "Transportation facilities combine public occupancy, operational intensity, and infrastructure durability. SGA supports MEPFT design for transportation-related buildings and support facilities - power, HVAC, plumbing, fire, and technology that stand up to heavy use.",
-        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/transportation.jpg",
         "image_alt": "Transportation and transit infrastructure",
         "intro_title": "Operational buildings, public standards",
         "intro": [
@@ -610,7 +610,7 @@ MARKETS = [
         "meta": "Campground and outdoor hospitality MEP engineering - site utilities, power, plumbing, comfort stations, and support buildings.",
         "hero": "Outdoor hospitality infrastructure engineered for seasonal peaks and simple operations.",
         "lead": "Campgrounds and outdoor hospitality sites need practical power, water, wastewater interfaces, and support buildings that work for guests and staff. SGA designs MEP systems for campground facilities - balancing code compliance, durability, and cost-effective operation.",
-        "image": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/campground.jpg",
         "image_alt": "Campground and outdoor hospitality setting",
         "intro_title": "Rugged, simple, code-solid",
         "intro": [
@@ -645,7 +645,7 @@ MARKETS = [
         "meta": "Religious facility MEP engineering - worship spaces, education wings, assembly occupancy, and multi-use campus buildings.",
         "hero": "Gathering spaces engineered for comfort, life safety, and community use.",
         "lead": "Religious facilities are assembly spaces, classrooms, kitchens, and community centers - often all at once. SGA designs MEPFT systems for houses of worship and related facilities that support large gatherings, flexible programming, and long-term stewardship of building resources.",
-        "image": "https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/faith.jpg",
         "image_alt": "Religious and community gathering architecture",
         "intro_title": "Multi-use buildings, careful systems",
         "intro": [
@@ -680,7 +680,7 @@ MARKETS = [
         "meta": "Assisted living and senior living MEP engineering - resident comfort, life safety, healthcare-adjacent systems, and reliable operations.",
         "hero": "Resident-centered environments with healthcare-informed building systems.",
         "lead": "Assisted living and senior living facilities blend residential comfort with care-driven reliability. SGA designs MEPFT systems that support resident wellbeing, staff operations, and life safety - drawing on healthcare experience where clinical adjacency and infection control matter.",
-        "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        "image": "../assets/media/assisted-living.jpg",
         "image_alt": "Senior living and care environment",
         "intro_title": "Care environments without institutional harshness",
         "intro": [
@@ -795,7 +795,7 @@ def render(m: dict) -> str:
               </div>
             </div>
             <div class="split__media split__media--wide">
-              <img src="{m["image"]}" alt="{m["image_alt"]}" width="1400" height="1120" />
+              <img src="{m["image"]}" alt="{m["image_alt"]}" width="1600" height="1200" loading="lazy" />
             </div>
           </div>
         </div>
