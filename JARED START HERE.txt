@@ -11,17 +11,18 @@ HANDOFF FILE (always keep this current):
 
 PICK UP HERE (next website session):
 - Read this file first, open the OneDrive edit workspace, then wait for Jared’s next request.
-- Latest published commit (playground → GitHub main → Vercel): afc240c
-  “Refresh homepage tone and add anonymous partner voice section.”
-  Local (unpublished) edit: homepage hero-1.jpg restored to free Unsplash glass-skyscraper shot.
-- Live preview: https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5) - Vercel still has old hero until publish.
-- Homepage hero is general (tech, speed, flexibility) - NOT data-center-only, NO Canton on home.
-- “What partners notice” anonymous quotes + “Patterns partners keep coming back for” are approved/liked.
-- Contact form uses mailto (FormSubmit failed with Microsoft 365 delivery). Working and liked.
-- Mike Ludwig is NOT on staff - do not add him; headshots folder may still have Mike files.
-- MEDIA POLICY (2026-07-16): Free Unsplash License photos are OK and encouraged for atmospheric /
-  market / hero imagery. Prefer download-to-assets (not hotlink CDN). Still: logos + team headshots
-  stay SGA-only; never invent client photos; never use paid Unsplash+ unless licensed.
+- Latest published commit (playground → GitHub main → Vercel): 1050bc9
+  “Restore free Unsplash skyscraper homepage hero and allow free Unsplash media.”
+- Live preview: https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
+- LOCAL unpublished: full free-Unsplash imagery pass on many market/page photos (edit folder only).
+  Ask Jared before publishing that pass. Pre-pass backups: assets/media/_pre_unsplash_pass/ (do not publish backups).
+- Homepage hero skyscrapers live on Vercel via 1050bc9.
+- Homepage tone: tech, speed, flexibility - NOT data-center-only, NO Canton on home.
+- Partner patterns + “What partners notice” approved/liked.
+- Contact: mailto (FormSubmit failed with M365). Working and liked.
+- Mike Ludwig is NOT on staff - do not add him.
+- MEDIA POLICY: Free Unsplash OK for atmospherics (download to assets/media). Logos + headshots SGA-only.
+  Reject photos with other firm logos, foreign-language facility signage when avoidable, or off-topic subjects.
 
 EDIT workspace (day-to-day with Grok):
 C:\Users\JaredSinger\OneDrive - SGA ENGINEERS\Documents\.grok\bin\sgaengineers-website\
@@ -86,8 +87,8 @@ CONTENT SOURCES (fileshare):
 - References: Master\References
 
 SUGGESTED NEXT (when Jared is ready - do not start unprompted):
-1. Imagery pass: free Unsplash upgrades for weak market/page photos (keep SGA headshots + real project shots)
-2. Publish current local edits (hero skyscraper + any imagery) when Jared says yes
+1. Publish imagery pass when Jared says yes (robocopy exclude _pre_unsplash_pass)
+2. Spot-check markets pages with Jared; swap any photo he dislikes
 3. Firm profile PDF download for pursuits
 4. Public phone if Jared supplies a number
 5. SEO basics (sitemap, robots, OG, favicon)
@@ -95,10 +96,14 @@ SUGGESTED NEXT (when Jared is ready - do not start unprompted):
 7. More anonymized case cards or quote polish if wanted
 8. Optional true web form later (Formspree/Web3Forms/M365) - mailto works now
 
-LAST SESSION NOTES (2026-07-16 ongoing):
-- Prior publish: afc240c (homepage tone + partner voice)
-- Restored homepage hero skyscrapers (Unsplash free, local file); industrial backup kept
-- Jared confirmed free Unsplash is fine and wants it used more where free license applies
-- Brand rule updated: free Unsplash OK; logos/headshots still SGA-only
+LAST SESSION NOTES (2026-07-16):
+- Published 1050bc9: skyscraper hero + free Unsplash media policy
+- Imagery pass (local): upgraded many weak photos with free Unsplash downloads into assets/media
+  Strong upgrades include: data-center, higher-ed, municipal, contact, hospitality, retail,
+  automation/industrial factory, EV, campground, transportation, corporate office, hero skyscrapers
+  Kept/restored when Unsplash was worse: expertise MEP corridor, wastewater aerial, assisted-living
+  exterior, commissioning (no other-firm logos), healthcare surgery, mechanical yellow ducts,
+  food-manufacturing prior asset
+- Do not publish _pre_unsplash_pass backup folder
 
 Read this file, confirm context if useful, and wait for Jared’s next request.
