@@ -148,27 +148,25 @@
 
             <div class="reveal">
               <div class="form-success" data-form-success hidden>
-                <h2>Message sent</h2>
-                <p>
-                  Thank you. We received your note and will follow up within one business day. If
-                  your matter is urgent, email
-                  <a href="mailto:engineer@sgaengineers.com">engineer@sgaengineers.com</a>
+                <h2>Almost done - send the email</h2>
+                <p data-form-success-detail>
+                  Your email app should open with a ready message to
+                  <strong>engineer@sgaengineers.com</strong>. Click <strong>Send</strong> in that
+                  window to finish. If nothing opened, use the copy button below or email us
                   directly.
                 </p>
+                <div class="form-success__actions">
+                  <button type="button" class="btn btn--primary" data-form-open-mail>
+                    Open email draft again
+                  </button>
+                  <button type="button" class="btn btn--ghost" data-form-copy>
+                    Copy message
+                  </button>
+                </div>
+                <p class="form-note" data-form-copy-status hidden></p>
               </div>
 
-              <form
-                class="form"
-                data-contact-form
-                action="https://formsubmit.co/engineer@sgaengineers.com"
-                method="POST"
-              >
-                <input type="hidden" name="_subject" value="SGA website inquiry" />
-                <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
-                <input type="hidden" name="_next" value="" data-form-next />
-
+              <form class="form" data-contact-form>
                 <div class="form-row">
                   <div class="field">
                     <label for="name">Name</label>
@@ -215,12 +213,13 @@
                   ></textarea>
                 </div>
                 <p class="form-note">
-                  Submitting sends your message to
-                  <strong>engineer@sgaengineers.com</strong>. We aim to reply within one business
-                  day. You can also email us directly anytime.
+                  This prepares an email to
+                  <strong>engineer@sgaengineers.com</strong> using your email app so the message
+                  goes through your normal Microsoft 365 mail (reliable delivery). We aim to reply
+                  within one business day. You can also email us directly anytime.
                 </p>
                 <button class="btn btn--primary" type="submit">
-                  Send message <span class="arrow" aria-hidden="true">→</span>
+                  Open email to send <span class="arrow" aria-hidden="true">→</span>
                 </button>
               </form>
             </div>

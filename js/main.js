@@ -92,67 +92,95 @@
 
   // Smooth internal anchor offset is handled via CSS scroll-padding-top
 
-  // Contact form success banner after FormSubmit redirect (?sent=1)
+  // Contact form - mailto via visitor's email app (reliable with Microsoft 365).
+  // FormSubmit and similar free relays often never reach M365 (silent drop).
+  const form = document.querySelector("[data-contact-form]");
   const formSuccess = document.querySelector("[data-form-success]");
-  if (formSuccess && /[?&]sent=1(?:&|$)/.test(window.location.search)) {
-    formSuccess.hidden = false;
-    const formEl = document.querySelector("[data-contact-form]");
-    if (formEl) formEl.hidden = true;
-    formSuccess.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" });
+  let lastMailto = "";
+  let lastBody = "";
+
+  const buildContactPayload = (formEl) => {
+    const data = new FormData(formEl);
+    const name = String(data.get("name") || "").trim();
+    const email = String(data.get("email") || "").trim();
+    const company = String(data.get("company") || "").trim();
+    const phone = String(data.get("phone") || "").trim();
+    const location = String(data.get("location") || "").trim();
+    const subject = String(data.get("subject") || "Project inquiry").trim();
+    const message = String(data.get("message") || "").trim();
+
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      company ? `Company: ${company}` : null,
+      phone ? `Phone: ${phone}` : null,
+      location ? `Project location: ${location}` : null,
+      "",
+      message,
+    ]
+      .filter((line) => line !== null)
+      .join("\n");
+
+    const mailto = `mailto:engineer@sgaengineers.com?subject=${encodeURIComponent(
+      `SGA website: ${subject}`
+    )}&body=${encodeURIComponent(body)}`;
+
+    return { body, mailto, subject };
+  };
+
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+
+      const payload = buildContactPayload(form);
+      lastMailto = payload.mailto;
+      lastBody = payload.body;
+
+      // Open the visitor's email app with a pre-filled message
+      window.location.href = payload.mailto;
+
+      if (formSuccess) {
+        formSuccess.hidden = false;
+        form.hidden = true;
+        formSuccess.scrollIntoView({
+          behavior: reduceMotion ? "auto" : "smooth",
+          block: "center",
+        });
+      }
+    });
   }
 
-  // Contact form - FormSubmit (POST) when action is set; mailto fallback otherwise
-  const form = document.querySelector("[data-contact-form]");
-  if (form) {
-    const nextField = form.querySelector("[data-form-next]");
-    if (nextField) {
-      const url = new URL(window.location.href);
-      url.searchParams.set("sent", "1");
-      url.hash = "";
-      nextField.value = url.toString();
-    }
+  const openMailBtn = document.querySelector("[data-form-open-mail]");
+  if (openMailBtn) {
+    openMailBtn.addEventListener("click", () => {
+      if (lastMailto) window.location.href = lastMailto;
+    });
+  }
 
-    form.addEventListener("submit", (e) => {
-      const action = (form.getAttribute("action") || "").trim();
-      const usesRemote =
-        /^https?:\/\//i.test(action) && !action.toLowerCase().startsWith("mailto:");
-
-      if (usesRemote) {
-        const btn = form.querySelector('button[type="submit"]');
-        if (btn) {
-          btn.disabled = true;
-          btn.textContent = "Sending…";
+  const copyBtn = document.querySelector("[data-form-copy]");
+  const copyStatus = document.querySelector("[data-form-copy-status]");
+  if (copyBtn) {
+    copyBtn.addEventListener("click", async () => {
+      const text =
+        lastBody ||
+        (form && !form.hidden ? buildContactPayload(form).body : "");
+      if (!text) return;
+      try {
+        await navigator.clipboard.writeText(
+          `To: engineer@sgaengineers.com\n\n${text}`
+        );
+        if (copyStatus) {
+          copyStatus.hidden = false;
+          copyStatus.textContent = "Copied. Paste into a new email to engineer@sgaengineers.com.";
         }
-        return;
+      } catch {
+        if (copyStatus) {
+          copyStatus.hidden = false;
+          copyStatus.textContent =
+            "Could not copy automatically. Select and copy the message manually, or email engineer@sgaengineers.com.";
+        }
       }
-
-      e.preventDefault();
-      const data = new FormData(form);
-      const name = String(data.get("name") || "").trim();
-      const email = String(data.get("email") || "").trim();
-      const company = String(data.get("company") || "").trim();
-      const phone = String(data.get("phone") || "").trim();
-      const location = String(data.get("location") || "").trim();
-      const subject = String(data.get("subject") || "Project inquiry").trim();
-      const message = String(data.get("message") || "").trim();
-
-      const body = [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        company ? `Company: ${company}` : null,
-        phone ? `Phone: ${phone}` : null,
-        location ? `Project location: ${location}` : null,
-        "",
-        message,
-      ]
-        .filter((line) => line !== null)
-        .join("\n");
-
-      const mailto = `mailto:engineer@sgaengineers.com?subject=${encodeURIComponent(
-        subject
-      )}&body=${encodeURIComponent(body)}`;
-
-      window.location.href = mailto;
     });
   }
 
