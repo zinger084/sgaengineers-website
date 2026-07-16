@@ -1,0 +1,39 @@
+Continue my SGA ENGINEERS website redesign.
+
+I started Grok from this folder (workspace):
+C:\Users\JaredSinger\.grok\bin\sgaengineers-website\
+
+SOURCE / LIVE SITE:
+https://www.sgaengineers.com/
+
+BRAND:
+- Font: Candara site-wide
+- Orange: #B62C00
+- Gray: #BFBFBF
+- Bright blue: #0077C8
+- Formal / professional AEC firm look (dark theme, not bright white)
+- Never name other AEC firms on the public website
+- Never use em-dashes on the public site
+- Push data centers / mission critical as the top market story
+- Logo (site-wide only): assets/logo/logo-primary-invert.png
+  Source: Marketing\Logo\Logo (with name) no border transparent background close crop invert.png
+
+WHAT’S BUILT:
+- Static multi-page site: index, expertise, markets, projects, about, careers, contact
+- 20 market detail pages under markets/
+- Conversion content (who hires us, outcomes, process, FAQ)
+- Partner headshots on About (assets/team/)
+- Selected Work (projects.html): anonymized writeups from Marketing/Project Writeups - never publish owner/facility names
+- Polish: hero animations, scroll reveals, stagger, refined header, logos, brand colors
+- Market generator: js/generate_markets.py
+
+GOALS:
+- Keep brand colors, Candara, logos, formal tone
+- Improve further when asked (real photos, deploy, content edits)
+- Don’t invent fake project credentials; prefer real SGA content
+- Never name clients/projects on the public site unless explicitly approved
+
+Contact: engineer@sgaengineers.com · info@sgaengineers.com
+Tagline: Design with Integrity.
+
+Read the project and wait for my next request.
