@@ -1234,6 +1234,74 @@ p {
   color: rgba(255, 255, 255, 0.65);
 }
 
+/* Anonymous partner voice cards */
+.voice-band {
+  background: var(--paper);
+}
+
+.voice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.voice-card {
+  margin: 0;
+  padding: 1.5rem 1.35rem 1.4rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  border-top: 3px solid var(--blue);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 1.25rem;
+}
+
+.voice-card blockquote {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.voice-card blockquote::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background: var(--accent);
+  margin-bottom: 0.85rem;
+}
+
+.voice-card figcaption {
+  display: grid;
+  gap: 0.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.voice-card__role {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.voice-card__market {
+  font-size: 0.9rem;
+  color: var(--slate);
+}
+
+@media (max-width: 960px) {
+  .voice-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Credentials */
 .creds {
   display: flex;
@@ -2151,6 +2219,16 @@ a.text-link:hover {
   gap: 1rem 1.5rem;
 }
 
+.outcome-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1100px) {
+  .outcome-grid--three {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .outcome-item {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -2598,6 +2676,7 @@ a.text-link:hover {
   }
 
   .outcome-grid,
+  .outcome-grid--three,
   .market-spotlight {
     grid-template-columns: 1fr;
   }

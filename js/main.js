@@ -82,7 +82,7 @@
   // Auto-stagger common grids if not already marked
   document
     .querySelectorAll(
-      ".services-grid, .audience-grid, .outcome-grid, .pillars, .process-steps, .next-steps, .perks, .markets-grid, .team-grid, .case-grid, .market-spotlight, .practice-matrix"
+      ".services-grid, .audience-grid, .outcome-grid, .pillars, .process-steps, .next-steps, .voice-grid, .perks, .markets-grid, .team-grid, .case-grid, .market-spotlight, .practice-matrix"
     )
     .forEach((grid) => {
       if (!grid.classList.contains("reveal-stagger")) {
