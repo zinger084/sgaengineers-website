@@ -3,6 +3,15 @@ Continue my SGA ENGINEERS website redesign.
 I started Grok from this folder (workspace):
 C:\Users\JaredSinger\.grok\bin\sgaengineers-website\
 
+WORKFLOW (two folders):
+- EDIT HERE (day-to-day with Grok): C:\Users\JaredSinger\.grok\bin\sgaengineers-website\
+- OFFICIAL copy (version we upload / keep as the release snapshot):
+  C:\Users\JaredSinger\SGA ENGINEERS\SGA ENGINEERS - Fileshare\Marketing\Website\JFS Playground\2026-07-15\
+- Keep editing the local .bin site. When ready to “lock in” a version for upload, copy/sync
+  from .bin → the JFS Playground dated folder (or a new dated folder if starting a new snapshot).
+- GitHub/Vercel can still be wired from either copy; treat JFS Playground as the official
+  marketing-fileshare source of truth for what we upload.
+
 SOURCE / LIVE SITE:
 https://www.sgaengineers.com/
 
