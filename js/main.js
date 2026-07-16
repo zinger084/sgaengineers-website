@@ -82,7 +82,7 @@
   // Auto-stagger common grids if not already marked
   document
     .querySelectorAll(
-      ".services-grid, .audience-grid, .outcome-grid, .pillars, .process-steps, .perks, .markets-grid, .team-grid, .case-grid, .market-spotlight, .practice-matrix"
+      ".services-grid, .audience-grid, .outcome-grid, .pillars, .process-steps, .next-steps, .perks, .markets-grid, .team-grid, .case-grid, .market-spotlight, .practice-matrix"
     )
     .forEach((grid) => {
       if (!grid.classList.contains("reveal-stagger")) {
@@ -92,15 +92,47 @@
 
   // Smooth internal anchor offset is handled via CSS scroll-padding-top
 
-  // Contact form - open mailto with composed message
+  // Contact form success banner after FormSubmit redirect (?sent=1)
+  const formSuccess = document.querySelector("[data-form-success]");
+  if (formSuccess && /[?&]sent=1(?:&|$)/.test(window.location.search)) {
+    formSuccess.hidden = false;
+    const formEl = document.querySelector("[data-contact-form]");
+    if (formEl) formEl.hidden = true;
+    formSuccess.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" });
+  }
+
+  // Contact form - FormSubmit (POST) when action is set; mailto fallback otherwise
   const form = document.querySelector("[data-contact-form]");
   if (form) {
+    const nextField = form.querySelector("[data-form-next]");
+    if (nextField) {
+      const url = new URL(window.location.href);
+      url.searchParams.set("sent", "1");
+      url.hash = "";
+      nextField.value = url.toString();
+    }
+
     form.addEventListener("submit", (e) => {
+      const action = (form.getAttribute("action") || "").trim();
+      const usesRemote =
+        /^https?:\/\//i.test(action) && !action.toLowerCase().startsWith("mailto:");
+
+      if (usesRemote) {
+        const btn = form.querySelector('button[type="submit"]');
+        if (btn) {
+          btn.disabled = true;
+          btn.textContent = "Sending…";
+        }
+        return;
+      }
+
       e.preventDefault();
       const data = new FormData(form);
       const name = String(data.get("name") || "").trim();
       const email = String(data.get("email") || "").trim();
       const company = String(data.get("company") || "").trim();
+      const phone = String(data.get("phone") || "").trim();
+      const location = String(data.get("location") || "").trim();
       const subject = String(data.get("subject") || "Project inquiry").trim();
       const message = String(data.get("message") || "").trim();
 
@@ -108,6 +140,8 @@
         `Name: ${name}`,
         `Email: ${email}`,
         company ? `Company: ${company}` : null,
+        phone ? `Phone: ${phone}` : null,
+        location ? `Project location: ${location}` : null,
         "",
         message,
       ]
