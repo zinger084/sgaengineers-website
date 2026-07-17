@@ -12,8 +12,9 @@ HANDOFF FILE (always keep this current):
 PICK UP HERE (next website session):
 - Read this file first, open the OneDrive edit workspace, then wait for Jared’s next request.
 - Session 2026-07-17: LIGHT / HYBRID theme published to Vercel for comparison.
-- Latest published commit (playground → GitHub main → Vercel): PENDING - Ryan/Caleb Mount Union Brenton edu
-  “Add light/hybrid theme for public preview; keep dark as backup.”
+- Latest published commit (playground → GitHub main → Vercel): 74b94eb
+  “Align Ryan and Caleb education with Aidan Mount Union line.”
+  Prior: 9247eac light/hybrid theme; 12d0e1f copy cleanup.
 - THEMES: css/THEME.md · Dark backup styles-dark.css · Light styles-light.css + active styles.css
 - Active site is LIGHT/HYBRID (warm paper + dark heroes/CTAs/footer). Dark is preserved.
 - To restore dark as live CSS: copy styles-dark.css over styles.css (see THEME.md), then publish.
