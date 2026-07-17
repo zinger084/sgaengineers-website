@@ -20,6 +20,8 @@ PICK UP HERE (next website session):
 - THEME: Jared likes the major format a lot; still in between pure white/light vs full dark.
   Keep hybrid as default until he picks; dark restore = styles-dark.css over styles.css (THEME.md).
 - Positioning line to keep: “solutions-minded engineers” / “help solve problems, not create more.”
+- Visual motif Jared likes: charcoal→blue gradient bands (CTA look) used on section--ink,
+  page-hero, cta-strip, contact-panel, footer, quote-band. CSS vars: --gradient-ink*.
 - Live preview: https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
 - COPY TONE (locked): simpler words, sound like real people - not buzzword marketing titles.
   Examples fixed: “We work across many markets”, “How we help in key markets”, “Experience”.
