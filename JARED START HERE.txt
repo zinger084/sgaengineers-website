@@ -11,9 +11,9 @@ HANDOFF FILE (always keep this current):
 
 PICK UP HERE (next website session):
 - Read this file first, open the OneDrive edit workspace, then wait for Jared's next request.
-- Latest published commit (playground → GitHub main → Vercel): 2babd06
-  "Expertise: balance Electrical and Technology capability lists."
-  Prior: be6eb76 hire/careers grids + service photos.
+- Latest published commit (playground → GitHub main → Vercel): 0338fc0
+  "About: add Marek France summer co-op; refresh team headline."
+  Prior: 2babd06 expertise lists; be6eb76 service photos.
 - Live site: https://www.sgaengineers.com/ and https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
 - Domain go-live 2026-07-17: Squarespace DNS to Vercel. www Valid; root A (Vercel) 308 to www.
   Email MX/SPF/DKIM left on Outlook. Do not casually edit email DNS.

@@ -1175,11 +1175,70 @@ p {
   box-shadow: inset 0 0 0 1px rgba(191, 191, 191, 0.12);
 }
 
+/*
+ * Sitewide tile marks (same family as markets, quieter on dark).
+ * Title left + mark top-right on cards/tiles.
+ */
+.tile-head,
+.pillar__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.tile-mark,
+.pillar__icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 2.55rem;
+  height: 2.55rem;
+  margin: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 119, 200, 0.16);
+  background: rgba(0, 119, 200, 0.08);
+  color: rgba(0, 95, 155, 0.88);
+}
+
+.tile-mark svg,
+.pillar__icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  display: block;
+  overflow: visible;
+}
+
+.tile-mark--dense svg,
+.pillar__icon[title="Lead"] svg {
+  width: 1.42rem;
+  height: 1.42rem;
+}
+
+/* Dark ink bands (pillars, etc.) */
+.section--ink .tile-mark,
+.section--ink .pillar__icon,
+.pillar__icon {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.82);
+}
+
 .pillar h3 {
   font-family: var(--font-display);
   font-size: 1.75rem;
   font-weight: 450;
-  margin-bottom: 0.85rem;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.tile-head h3 {
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-right: 0.35rem;
+  line-height: 1.25;
 }
 
 .pillar p {
@@ -1835,12 +1894,13 @@ a.text-link:hover {
   padding: 1.35rem 1.25rem;
 }
 
+.cred-card .tile-head h3,
 .cred-card h3 {
   font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 500;
   letter-spacing: -0.02em;
-  margin: 0 0 0.5rem;
+  margin: 0;
   color: var(--ink);
 }
 
@@ -2140,15 +2200,16 @@ a.text-link:hover {
   border: 1px solid var(--line);
 }
 
+.perk .tile-head h3,
 .perk h3 {
   font-size: 1.05rem;
   font-weight: 650;
-  margin-bottom: 0.5rem;
 }
 
 .perk p {
   color: var(--slate);
   font-size: 0.95rem;
+  margin: 0;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -2319,12 +2380,17 @@ a.text-link:hover {
   margin-bottom: 0.85rem;
 }
 
+.next-step .tile-head h3,
 .next-step h3 {
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: -0.02em;
-  margin: 0 0 0.55rem;
+  margin: 0;
+}
+
+.next-step > p {
+  margin: 0;
 }
 
 .next-step p {
@@ -2520,15 +2586,15 @@ a.text-link:hover {
 }
 
 .outcome-item {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.85rem;
+  display: flex;
+  flex-direction: column;
   padding: 1.25rem 1.35rem;
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
 }
 
+/* legacy check/number badge (kept for any unmigrated tiles) */
 .outcome-item__icon {
   width: 2rem;
   height: 2rem;
@@ -2542,16 +2608,17 @@ a.text-link:hover {
   flex-shrink: 0;
 }
 
+.outcome-item .tile-head h3,
 .outcome-item h3 {
   font-size: 1.05rem;
   font-weight: 650;
-  margin-bottom: 0.3rem;
 }
 
 .outcome-item p {
   color: var(--slate);
   font-size: 0.95rem;
   line-height: 1.55;
+  margin: 0;
 }
 
 .process-steps {
