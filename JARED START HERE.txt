@@ -11,9 +11,9 @@ HANDOFF FILE (always keep this current):
 
 PICK UP HERE (next website session):
 - Read this file first, open the OneDrive edit workspace, then wait for Jared's next request.
-- Latest published commit (playground → GitHub main → Vercel): 932f4d7
-  "Home: balance partner patterns to six tiles."
-  Prior: 3d54cbc market marks; 9372e32 design team leadership.
+- Latest published commit (playground → GitHub main → Vercel): be6eb76
+  "Balance hire-reason and careers grids; enrich home service tiles."
+  Prior: 932f4d7 home patterns six; 3d54cbc market marks.
 - Live site: https://www.sgaengineers.com/ and https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
 - Domain go-live 2026-07-17: Squarespace DNS to Vercel. www Valid; root A (Vercel) 308 to www.
   Email MX/SPF/DKIM left on Outlook. Do not casually edit email DNS.
