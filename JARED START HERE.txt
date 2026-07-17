@@ -12,9 +12,9 @@ HANDOFF FILE (always keep this current):
 PICK UP HERE (next website session):
 - Read this file first, open the OneDrive edit workspace, then wait for Jared’s next request.
 - Session 2026-07-17: LIGHT / HYBRID theme published to Vercel for comparison.
-- Latest published commit (playground → GitHub main → Vercel): 2ecbbac
-  “Show school names only on team cards, not degree titles.”
-  Prior: 34cce75 solutions-minded; 870064a expertise title; 9247eac light/hybrid.
+- Latest published commit (playground → GitHub main → Vercel): fa0fbd5
+  “Use transparent logo assets without solid white or black boxes.”
+  Prior: 2ecbbac school-only edu; 34cce75 solutions-minded; 9247eac light/hybrid.
 - THEMES: css/THEME.md · Dark backup styles-dark.css · Light styles-light.css + active styles.css
 - Active site is LIGHT/HYBRID (warm paper + dark heroes/CTAs/footer). Dark is preserved.
 - THEME: Jared likes the major format a lot; still in between pure white/light vs full dark.
