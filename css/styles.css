@@ -1150,18 +1150,50 @@ p {
 }
 
 .market-chip {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 0.75rem;
-  padding: 1.1rem 1.15rem;
+  /* One-line chips, equal height across the grid */
+  min-height: 3.5rem;
+  height: 100%;
+  padding: 0.7rem 0.95rem;
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   font-weight: 500;
   font-size: 0.95rem;
+  overflow: hidden;
   transition: background var(--transition), border-color var(--transition),
-    color var(--transition);
+    color var(--transition), box-shadow var(--transition);
+}
+
+/*
+ * Market mark: muted brand disc + soft white glyph
+ * Quiet identifier — not a loud CTA button
+ */
+.market-chip__icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 119, 200, 0.14);
+  /* Muted blue wash — not solid brand CTA blue */
+  background: rgba(0, 119, 200, 0.12);
+  color: rgba(0, 95, 155, 0.82);
+  box-shadow: none;
+  transition: background var(--transition-fast), border-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.market-chip__icon svg {
+  width: 1.12rem;
+  height: 1.12rem;
+  opacity: 1;
+  margin: 0;
+  display: block;
 }
 
 .market-chip:hover {
@@ -1170,10 +1202,32 @@ p {
   color: var(--ink-deep);
 }
 
+.market-chip:hover .market-chip__icon {
+  background: rgba(0, 119, 200, 0.18);
+  border-color: rgba(0, 119, 200, 0.22);
+  color: rgba(0, 90, 145, 0.92);
+  transform: none;
+  box-shadow: none;
+}
+
 .market-chip.is-active,
 .market-chip.market-chip--featured {
   border-color: var(--accent);
   box-shadow: inset 0 0 0 1px rgba(196, 51, 8, 0.35);
+}
+
+/* Featured sector (Mission Critical): muted orange, same quiet treatment */
+.market-chip.market-chip--featured .market-chip__icon {
+  background: rgba(182, 44, 0, 0.1);
+  border-color: rgba(182, 44, 0, 0.16);
+  color: rgba(160, 42, 0, 0.88);
+  box-shadow: none;
+}
+
+.market-chip.market-chip--featured:hover .market-chip__icon {
+  background: rgba(182, 44, 0, 0.15);
+  border-color: rgba(182, 44, 0, 0.22);
+  color: rgba(150, 40, 0, 0.95);
 }
 
 .market-chip.is-active {
@@ -1182,11 +1236,50 @@ p {
   color: var(--on-accent);
 }
 
-.market-chip svg {
+/* On active (solid blue) chip: soft light disc so it stays quiet */
+.market-chip.is-active .market-chip__icon {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.92);
+  box-shadow: none;
+}
+
+.case-card__mark.market-chip__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: rgba(0, 119, 200, 0.1);
+  border-color: rgba(0, 119, 200, 0.12);
+  color: rgba(0, 95, 155, 0.78);
+}
+
+.case-card__mark.market-chip__icon svg {
+  width: 1.14rem;
+  height: 1.14rem;
+}
+
+.case-card:hover .case-card__mark.market-chip__icon {
+  background: rgba(0, 119, 200, 0.15);
+  border-color: rgba(0, 119, 200, 0.18);
+  color: rgba(0, 90, 145, 0.9);
+  transform: none;
+}
+
+.market-chip__label {
+  flex: 1 1 auto;
+  min-width: 0;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Arrow only (not the icon glyph) */
+.market-chip > svg {
   width: 1rem;
   height: 1rem;
   opacity: 0.45;
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 .market-services {
@@ -1838,10 +1931,12 @@ a.text-link:hover {
 }
 
 .case-card {
+  position: relative;
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   padding: 1.5rem 1.6rem 1.65rem;
+  padding-right: 4rem; /* room for market mark top-right */
   transition: border-color var(--transition), box-shadow var(--transition),
     transform var(--transition);
 }
@@ -1852,11 +1947,29 @@ a.text-link:hover {
   transform: translateY(-2px);
 }
 
+/* Same round market mark as sector chips — top right of selected-work tiles */
+.case-card__mark.market-chip__icon {
+  position: absolute;
+  top: 1.15rem;
+  right: 1.15rem;
+  width: 2.35rem;
+  height: 2.35rem;
+  /* keep pointer events so title tooltip works on hover */
+  pointer-events: auto;
+  cursor: default;
+}
+
+.case-card:hover .case-card__mark.market-chip__icon {
+  border-color: var(--blue);
+  transform: scale(1.04);
+}
+
 .case-card__meta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 0.75rem;
   margin-bottom: 0.85rem;
+  padding-right: 0.25rem;
 }
 
 .case-card__market {
@@ -2498,19 +2611,64 @@ a.text-link:hover {
 
 .market-spotlight article,
 .market-spotlight-card {
+  position: relative;
   display: block;
   padding: 1.75rem;
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
+  overflow: hidden;
+  isolation: isolate;
   transition: border-color var(--transition), box-shadow var(--transition),
     transform var(--transition);
+}
+
+/* Soft whitewash photo - right side; image paths on the element (page-relative) */
+.market-spotlight-card__photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(55%, 16rem);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.34;
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity var(--transition-fast), width var(--transition-fast);
+  /* Fade into the white card so type stays readable */
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 45%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 45%, #000 100%);
+}
+
+/* Extra whitewash wash over the photo */
+.market-spotlight-card__photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.92) 0%,
+    rgba(255, 255, 255, 0.55) 45%,
+    rgba(255, 255, 255, 0.25) 100%
+  );
+  pointer-events: none;
 }
 
 .market-spotlight-card:hover {
   border-color: transparent;
   box-shadow: var(--shadow);
   transform: translateY(-3px);
+}
+
+.market-spotlight-card:hover .market-spotlight-card__photo {
+  opacity: 0.45;
+  width: min(60%, 17.5rem);
+}
+
+.market-spotlight-card > *:not(.market-spotlight-card__photo) {
+  position: relative;
+  z-index: 1;
 }
 
 .market-spotlight h3,
@@ -2528,6 +2686,7 @@ a.text-link:hover {
 .market-spotlight-card p {
   color: var(--slate);
   font-size: 0.98rem;
+  max-width: 36rem;
 }
 
 .trust-bar {

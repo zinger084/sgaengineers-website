@@ -704,4 +704,5 @@
       if (e.key === "Escape" && !examplesPanel.hidden) closeExamples();
     });
   }
+
 })();
