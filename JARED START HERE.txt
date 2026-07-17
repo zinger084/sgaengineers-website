@@ -11,9 +11,9 @@ HANDOFF FILE (always keep this current):
 
 PICK UP HERE (next website session):
 - Read this file first, open the OneDrive edit workspace, then wait for Jared's next request.
-- Latest published commit (playground → GitHub main → Vercel): 9372e32
-  "Position design team leadership across About, Expertise, Home."
-  Prior: ce490fc sixth card; 87a780f nav scroll.
+- Latest published commit (playground → GitHub main → Vercel): 3d54cbc
+  "Markets and Selected Work: muted disc icons and layout polish."
+  Prior: 9372e32 design team leadership; ce490fc sixth card; 87a780f nav scroll.
 - Live site: https://www.sgaengineers.com/ and https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
 - Domain go-live 2026-07-17: Squarespace DNS to Vercel. www Valid; root A (Vercel) 308 to www.
   Email MX/SPF/DKIM left on Outlook. Do not casually edit email DNS.
@@ -145,7 +145,8 @@ SUGGESTED NEXT (when Jared is ready - do not start unprompted):
 LAST SESSION (2026-07-17):
 - Domain cutover: Google Sites → Vercel via Squarespace DNS (www CNAME + root A). Email untouched.
 - Nav scroll: is-over-dark sitewide (87a780f). About sixth MEPFT card (ce490fc).
-- Design team leadership sitewide (9372e32): replace right-sized senior involvement;
-  principals always close; multi-discipline lead on About/Expertise/Home.
+- Design team leadership sitewide (9372e32). Markets/Selected Work polish (3d54cbc):
+  muted disc market marks + tooltips, case-card marks, even project grid,
+  credentials above by-market, four spotlight markets only.
 - LOCKED phrases: "Copy" = playground only; "go live" = GitHub/Vercel world.
 - Local-only media _pre_unsplash_pass not published. Update this handoff when session ends.
