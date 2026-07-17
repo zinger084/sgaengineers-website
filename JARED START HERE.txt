@@ -11,11 +11,14 @@ HANDOFF FILE (always keep this current):
 
 PICK UP HERE (next website session):
 - Read this file first, open the OneDrive edit workspace, then wait for Jared's next request.
-- Latest published: header scroll-to-white on all pages (is-over-dark sitewide). Commit hash after this note.
+- Latest published commit (playground → GitHub main → Vercel): 87a780f
+  "Nav: transparent over dark heroes, white bar on scroll sitewide."
 - Live site: https://www.sgaengineers.com/ and https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
 - Domain go-live 2026-07-17: Squarespace DNS to Vercel. www Valid; root A (Vercel) 308 to www.
   Email MX/SPF/DKIM left on Outlook. Do not casually edit email DNS.
-- Edit folder: OneDrive .bin\sgaengineers-website\ (day-to-day). Publish only after clear yes.
+- Edit folder: OneDrive .bin\sgaengineers-website\ (day-to-day).
+- LOCKED publish gates: (1) local edit only → (2) "Copy" = playground only →
+  (3) "go live" = GitHub/Vercel world. Never skip gates or combine without those phrases.
 
 THEME (open decision - keep hybrid until Jared picks):
 - Active: LIGHT/HYBRID (warm paper + dark heroes/CTAs/footer gradients). See css/THEME.md.
@@ -89,15 +92,36 @@ WHAT'S BUILT:
 - Homepage: hero skyscraper (Unsplash free, local hero-1.jpg), patterns, "What partners notice" quotes
 - Nav: is-over-dark on all pages - transparent over dark heroes, white bar on scroll (homepage behavior sitewide)
 
-PUBLISH WORKFLOW (ALWAYS FOLLOW):
-1. Edit only in OneDrive .bin with Grok
-2. ALWAYS ASK Jared before publishing - never copy/push without clear yes
-3. After yes:
-   a. robocopy .bin → JFS Playground\2026-07-15 (keep playground .git; skip copying over .git)
-   b. Commit + push FROM playground to GitHub main
-   c. Vercel auto-deploys to .vercel.app AND www.sgaengineers.com
+PUBLISH WORKFLOW (LOCKED - ALWAYS FOLLOW, every session):
+Three gates. Never combine copy + GitHub into one silent action.
+
+JARED'S SHORT COMMANDS (exact phrases - treat as the yes for that gate only):
+- "Copy"  = robocopy OneDrive edit folder → JFS Playground only. STOP after copy. Do not push.
+- "go live" = commit + push playground → GitHub main → Vercel (world-visible). Only after Copy
+  has already put the intended files in playground (or confirm if unclear).
+- Same meaning if he writes "copy" / "Go live" (case-insensitive). Do not invent other shortcuts
+  that skip a gate. If he says only "publish" or "push", ask which gate he means unless obvious.
+
+1. LOCAL ONLY (default)
+   - Always make changes first in OneDrive edit folder only:
+     Documents\.grok\bin\sgaengineers-website\
+   - Jared previews from local files. Live site does NOT change yet.
+   - Do not robocopy, commit, or push until Jared says "Copy" or "go live" (or clear equivalent).
+
+2. "Copy" → PLAYGROUND ONLY
+   - On "Copy": robocopy .bin → JFS Playground\2026-07-15
+     (keep playground .git; skip copying over .git; do not publish local-only folders
+     like assets/media/_pre_unsplash_pass/)
+   - After copy, STOP and wait. Do not auto-push to GitHub. Live site still unchanged.
+
+3. "go live" → GITHUB / WORLD
+   - On "go live": commit + push FROM playground to GitHub main
+   - Vercel auto-deploys to .vercel.app AND www.sgaengineers.com
+   - Never push to GitHub from the .bin folder as the normal publish path
+
 4. Explain in plain language when asked - Jared is learning the stack
-5. Do NOT push to GitHub from the .bin folder as the normal publish path
+5. One approval is not a blank check. "Copy" is never "go live". "go live" is never a silent Copy
+   unless playground already matches local and he only needs the push (if unsure, confirm).
 
 CONTENT SOURCES (fileshare):
 - Resumes: Master\Resumes
@@ -120,5 +144,6 @@ SUGGESTED NEXT (when Jared is ready - do not start unprompted):
 LAST SESSION (2026-07-17):
 - Domain cutover: Google Sites → Vercel via Squarespace DNS (www CNAME + root A). Email untouched.
 - Small change: all non-home pages is-solid → is-over-dark so nav turns white on scroll like home.
-- Published after Jared preview approval. Local-only media _pre_unsplash_pass not published.
-- Standing rules unchanged: ask before publish; update this handoff when session ends.
+- Published 87a780f after Jared preview approval. Local-only media _pre_unsplash_pass not published.
+- LOCKED phrases: "Copy" = playground robocopy only; "go live" = GitHub push / world live.
+  Always local OneDrive first. Update this handoff when session ends.
