@@ -202,7 +202,7 @@
     });
   }
 
-  // Practice bubbles: anonymized example projects from portfolio
+  // Practice bubbles: example projects from portfolio
   const practiceRoot = document.querySelector("[data-practice-bubbles]");
   const examplesPanel = document.querySelector("[data-practice-examples]");
   if (practiceRoot && examplesPanel) {
@@ -213,7 +213,7 @@
     const closeBtn = examplesPanel.querySelector("[data-examples-close]");
     const bubbles = practiceRoot.querySelectorAll(".practice-bubble");
 
-    /** Anonymized examples drawn from real SGA work (names withheld). */
+    /** Examples drawn from real SGA work. */
     const BUBBLE_EXAMPLES = {
       dbb: {
         category: "Delivery methods",

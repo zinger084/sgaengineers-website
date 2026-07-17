@@ -1547,6 +1547,18 @@ a.text-link:hover {
   line-height: 1.35;
 }
 
+.team-card__edu {
+  margin-top: 0.4rem;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: var(--slate);
+}
+
+.team-card--compact .team-card__edu {
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
 .team-card__bio {
   margin-top: 1rem;
   color: var(--slate);

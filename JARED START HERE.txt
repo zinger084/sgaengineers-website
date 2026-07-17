@@ -11,18 +11,21 @@ HANDOFF FILE (always keep this current):
 
 PICK UP HERE (next website session):
 - Read this file first, open the OneDrive edit workspace, then wait for Jared’s next request.
-- Latest published commit (playground → GitHub main → Vercel): 1050bc9
-  “Restore free Unsplash skyscraper homepage hero and allow free Unsplash media.”
+- Session 2026-07-17: copy cleanup + team degrees; Jared said publish.
+- Latest published commit: see end of this file after push (hash filled on publish).
 - Live preview: https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
-- LOCAL unpublished: full free-Unsplash imagery pass on many market/page photos (edit folder only).
-  Ask Jared before publishing that pass. Pre-pass backups: assets/media/_pre_unsplash_pass/ (do not publish backups).
-- Homepage hero skyscrapers live on Vercel via 1050bc9.
+- COPY TONE (locked): simpler words, sound like real people - not buzzword marketing titles.
+  Examples fixed: “We work across many markets”, “How we help in key markets”, “Experience”.
+- Do not re-add privacy disclaimers (“names withheld”, “anonymized by design”, etc.).
+- Do not re-add Unlimited PTO (employees have established PTO amounts).
+- Do not re-add: chase-projects/values line; black-box-after-award; “not jargon walls”.
+- Team cards: show engineering education under each person (from firm resumes).
 - Homepage tone: tech, speed, flexibility - NOT data-center-only, NO Canton on home.
-- Partner patterns + “What partners notice” approved/liked.
 - Contact: mailto (FormSubmit failed with M365). Working and liked.
 - Mike Ludwig is NOT on staff - do not add him.
-- MEDIA POLICY: Free Unsplash OK for atmospherics (download to assets/media). Logos + headshots SGA-only.
-  Reject photos with other firm logos, foreign-language facility signage when avoidable, or off-topic subjects.
+- MEDIA POLICY: Free Unsplash License OK for atmospherics; download to assets/media.
+  Logos + headshots SGA-only. No paid stock without license.
+- Local only (do not publish): assets/media/_pre_unsplash_pass/ pre-pass backups.
 
 EDIT workspace (day-to-day with Grok):
 C:\Users\JaredSinger\OneDrive - SGA ENGINEERS\Documents\.grok\bin\sgaengineers-website\
@@ -87,23 +90,21 @@ CONTENT SOURCES (fileshare):
 - References: Master\References
 
 SUGGESTED NEXT (when Jared is ready - do not start unprompted):
-1. Publish imagery pass when Jared says yes (robocopy exclude _pre_unsplash_pass)
-2. Spot-check markets pages with Jared; swap any photo he dislikes
-3. Firm profile PDF download for pursuits
-4. Public phone if Jared supplies a number
-5. SEO basics (sitemap, robots, OG, favicon)
-6. Consistent footers / privacy line on form
-7. More anonymized case cards or quote polish if wanted
-8. Optional true web form later (Formspree/Web3Forms/M365) - mailto works now
+1. Spot-check markets pages with Jared; swap any photo he dislikes
+2. Firm profile PDF download for pursuits
+3. Public phone if Jared supplies a number
+4. SEO basics (sitemap, robots, OG, favicon)
+5. Consistent footers / privacy line on form
+6. More case cards or quote polish if wanted
+7. Optional true web form later (Formspree/Web3Forms/M365) - mailto works now
 
-LAST SESSION NOTES (2026-07-16):
-- Published 1050bc9: skyscraper hero + free Unsplash media policy
-- Imagery pass (local): upgraded many weak photos with free Unsplash downloads into assets/media
-  Strong upgrades include: data-center, higher-ed, municipal, contact, hospitality, retail,
-  automation/industrial factory, EV, campground, transportation, corporate office, hero skyscrapers
-  Kept/restored when Unsplash was worse: expertise MEP corridor, wastewater aerial, assisted-living
-  exterior, commissioning (no other-firm logos), healthcare surgery, mechanical yellow ducts,
-  food-manufacturing prior asset
-- Do not publish _pre_unsplash_pass backup folder
+LAST SESSION (2026-07-17):
+- Copy cleanup per Jared: simpler language, no privacy disclaimers, no Unlimited PTO
+- Removed chase-projects line; black-box-after-award; “not jargon walls”
+- Team education lines on About (degrees from Master\Resumes)
+- Markets titles: “We work across many markets”, “How we help in key markets”
+- Selected work title: “Experience”; projects hero simplified
+- Published to GitHub main via playground (Vercel auto-deploy)
+- Standing rules unchanged: ask before publish; update this handoff when session ends
 
 Read this file, confirm context if useful, and wait for Jared’s next request.
