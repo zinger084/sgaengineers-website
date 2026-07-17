@@ -12,7 +12,8 @@ HANDOFF FILE (always keep this current):
 PICK UP HERE (next website session):
 - Read this file first, open the OneDrive edit workspace, then wait for Jared’s next request.
 - Session 2026-07-17: copy cleanup + team degrees; Jared said publish.
-- Latest published commit: see end of this file after push (hash filled on publish).
+- Latest published commit (playground → GitHub main → Vercel): 12d0e1f
+  “Simplify public copy and add team education credentials.”
 - Live preview: https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
 - COPY TONE (locked): simpler words, sound like real people - not buzzword marketing titles.
   Examples fixed: “We work across many markets”, “How we help in key markets”, “Experience”.
@@ -104,7 +105,7 @@ LAST SESSION (2026-07-17):
 - Team education lines on About (degrees from Master\Resumes)
 - Markets titles: “We work across many markets”, “How we help in key markets”
 - Selected work title: “Experience”; projects hero simplified
-- Published to GitHub main via playground (Vercel auto-deploy)
+- Published 12d0e1f to GitHub main via playground (Vercel auto-deploy)
 - Standing rules unchanged: ask before publish; update this handoff when session ends
 
 Read this file, confirm context if useful, and wait for Jared’s next request.
