@@ -6,35 +6,39 @@ HANDOFF FILE (always keep this current):
 - START of website work: always READ this file first for rules, paths, and where we left off.
 - END of website work: when Jared says we are done / quitting / pick up later / session over / cya,
   ALWAYS UPDATE this file before stopping - last commit, what shipped, decisions, open items,
-  and a clear PICK UP HERE block. Do not wait to be asked; treat “we’re done” as the trigger.
+  and a clear PICK UP HERE block. Do not wait to be asked; treat "we're done" as the trigger.
 - Optional: after a publish, note the new commit hash here so the next session is accurate.
 
 PICK UP HERE (next website session):
-- Read this file first, open the OneDrive edit workspace, then wait for Jared’s next request.
-- Session 2026-07-17: LIGHT / HYBRID theme published to Vercel for comparison.
-- Latest published commit (playground → GitHub main → Vercel): 8a594bf
-  “Extend charcoal-to-blue gradient motif across brand moment sections.”
-  Prior: fa0fbd5 transparent logos; 2ecbbac school-only edu; 34cce75 solutions-minded.
-- THEMES: css/THEME.md · Dark backup styles-dark.css · Light styles-light.css + active styles.css
-- Active site is LIGHT/HYBRID (warm paper + dark heroes/CTAs/footer). Dark is preserved.
-- THEME: Jared likes the major format a lot; still in between pure white/light vs full dark.
-  Keep hybrid as default until he picks; dark restore = styles-dark.css over styles.css (THEME.md).
-- Positioning line to keep: “solutions-minded engineers” / “help solve problems, not create more.”
-- Visual motif Jared likes: charcoal→blue gradient bands (CTA look) used on section--ink,
-  page-hero, cta-strip, contact-panel, footer, quote-band. CSS vars: --gradient-ink*.
-- Live preview: https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
-- COPY TONE (locked): simpler words, sound like real people - not buzzword marketing titles.
-  Examples fixed: “We work across many markets”, “How we help in key markets”, “Experience”.
-- Do not re-add privacy disclaimers (“names withheld”, “anonymized by design”, etc.).
-- Do not re-add Unlimited PTO (employees have established PTO amounts).
-- Do not re-add: chase-projects/values line; black-box-after-award; “not jargon walls”.
-- Team cards: show school only under each person (no B.S./BSME/BSEE/degree titles).
-- Homepage tone: tech, speed, flexibility - NOT data-center-only, NO Canton on home.
-- Contact: mailto (FormSubmit failed with M365). Working and liked.
+- Read this file first, open the OneDrive edit workspace, then wait for Jared's next request.
+- Latest published: header scroll-to-white on all pages (is-over-dark sitewide). Commit hash after this note.
+- Live site: https://www.sgaengineers.com/ and https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
+- Domain go-live 2026-07-17: Squarespace DNS to Vercel. www Valid; root A (Vercel) 308 to www.
+  Email MX/SPF/DKIM left on Outlook. Do not casually edit email DNS.
+- Edit folder: OneDrive .bin\sgaengineers-website\ (day-to-day). Publish only after clear yes.
+
+THEME (open decision - keep hybrid until Jared picks):
+- Active: LIGHT/HYBRID (warm paper + dark heroes/CTAs/footer gradients). See css/THEME.md.
+- Jared likes the overall format a lot; still between pure light vs full dark.
+- Dark full backup: css/styles-dark.css · Light snapshot: css/styles-light.css
+- Restore dark live: copy styles-dark.css over styles.css, then publish when asked.
+- Signature visual Jared likes: charcoal left → blue right on CTA / ink / heroes / contact /
+  footer. CSS: --gradient-ink, --gradient-ink-deep, --gradient-ink-panel, --gradient-brand-bar.
+  Keep extending that motif carefully (moment sections only, not every light card).
+
+LOCKED COPY / CONTENT RULES:
+- Tone: simpler words, real people - not buzzword titles.
+- "solutions-minded engineers" / "help solve problems, not create more" - keep sitewide.
+- Team cards: school names only (no B.S./BSME/BSEE/degree titles). PE covers scope - do not
+  explain that on the site.
+- No privacy disclaimers ("names withheld", "anonymized by design", etc.).
+- No Unlimited PTO. No chase-projects/values line. No black-box-after-award. No "jargon walls".
+- Homepage: tech, speed, flexibility - NOT data-center-only, NO Canton on home.
+- Contact: mailto only (FormSubmit failed with M365). Working and liked.
 - Mike Ludwig is NOT on staff - do not add him.
-- MEDIA POLICY: Free Unsplash License OK for atmospherics; download to assets/media.
-  Logos + headshots SGA-only. No paid stock without license.
-- Local only (do not publish): assets/media/_pre_unsplash_pass/ pre-pass backups.
+- Logos: transparent only - logo-on-light.png / logo-on-dark.png (no solid white/black box).
+- Media: free Unsplash OK for atmospherics (local assets/media). Logos + headshots SGA-only.
+- Local only (do not publish): assets/media/_pre_unsplash_pass/
 
 EDIT workspace (day-to-day with Grok):
 C:\Users\JaredSinger\OneDrive - SGA ENGINEERS\Documents\.grok\bin\sgaengineers-website\
@@ -43,8 +47,8 @@ OFFICIAL playground snapshot (publish from here only):
 C:\Users\JaredSinger\SGA ENGINEERS\SGA ENGINEERS - Fileshare\Marketing\Website\JFS Playground\2026-07-15\
 
 SOURCE / LIVE:
-- Legacy public domain: https://www.sgaengineers.com/
-- Redesign on Vercel: https://sgaengineers-website.vercel.app/
+- Public domain (live redesign): https://www.sgaengineers.com/
+- Vercel preview URL: https://sgaengineers-website.vercel.app/
 - GitHub: https://github.com/zinger084/sgaengineers-website.git (branch main)
 
 BRAND / RULES:
@@ -75,14 +79,15 @@ BRAND / RULES:
 - No public main phone number published yet (callback via form if provided)
 - Do not invent phone numbers or street address
 
-WHAT’S BUILT:
+WHAT'S BUILT:
 - Pages: index, expertise, markets (+20 detail pages), projects, about, careers, contact
 - About: full team (Jared, Jason + Brian, Brad, Ryan, Aidan, Caleb) with headshots
 - Firm credentials / PE multi-state / Mentor·Innovate·Lead
 - Selected Work: anonymized case cards
 - Contact: HQ Canton on Contact only, service footprint, next steps, mailto form with copy fallback
 - Media: assets/media (SGA Marketing + free Unsplash downloads), assets/team headshots (SGA only)
-- Homepage: hero skyscraper (Unsplash free, local hero-1.jpg), patterns, “What partners notice” quotes
+- Homepage: hero skyscraper (Unsplash free, local hero-1.jpg), patterns, "What partners notice" quotes
+- Nav: is-over-dark on all pages - transparent over dark heroes, white bar on scroll (homepage behavior sitewide)
 
 PUBLISH WORKFLOW (ALWAYS FOLLOW):
 1. Edit only in OneDrive .bin with Grok
@@ -90,7 +95,7 @@ PUBLISH WORKFLOW (ALWAYS FOLLOW):
 3. After yes:
    a. robocopy .bin → JFS Playground\2026-07-15 (keep playground .git; skip copying over .git)
    b. Commit + push FROM playground to GitHub main
-   c. Vercel auto-deploys
+   c. Vercel auto-deploys to .vercel.app AND www.sgaengineers.com
 4. Explain in plain language when asked - Jared is learning the stack
 5. Do NOT push to GitHub from the .bin folder as the normal publish path
 
@@ -109,18 +114,11 @@ SUGGESTED NEXT (when Jared is ready - do not start unprompted):
 5. Consistent footers / privacy line on form
 6. More case cards or quote polish if wanted
 7. Optional true web form later (Formspree/Web3Forms/M365) - mailto works now
+8. Optional: update root A record to 216.198.79.1 if Vercel still shows DNS Change Recommended
+9. Optional: remove leftover Google records in Squarespace after go-live settled
 
 LAST SESSION (2026-07-17):
-- Copy cleanup per Jared: simpler language, no privacy disclaimers, no Unlimited PTO
-- Removed chase-projects line; black-box-after-award; “not jargon walls”
-- Team education lines on About: school names only (no degree titles)
-- Markets titles: “We work across many markets”, “How we help in key markets”
-- Selected work title: “Experience”; projects hero simplified
-- Published 12d0e1f to GitHub main via playground (Vercel auto-deploy)
-- LIGHT/HYBRID theme published 9247eac: styles.css + styles-light.css; dark backup styles-dark.css
-  Dual header logos (logo-white-bg + invert over dark heroes). See css/THEME.md.
-- Added sitewide positioning: solutions-minded engineers; help solve problems, not create more
-  (home, about, expertise, contact). Format kept; theme still optional light vs dark.
-- Standing rules unchanged: ask before publish; update this handoff when session ends
-
-Read this file, confirm context if useful, and wait for Jared’s next request.
+- Domain cutover: Google Sites → Vercel via Squarespace DNS (www CNAME + root A). Email untouched.
+- Small change: all non-home pages is-solid → is-over-dark so nav turns white on scroll like home.
+- Published after Jared preview approval. Local-only media _pre_unsplash_pass not published.
+- Standing rules unchanged: ask before publish; update this handoff when session ends.

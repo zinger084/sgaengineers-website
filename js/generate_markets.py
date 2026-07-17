@@ -752,7 +752,7 @@ def render(m: dict) -> str:
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <header class="site-header is-solid">
+    <header class="site-header is-over-dark">
       <div class="container nav">
         <a class="logo" href="../index.html" aria-label="SGA ENGINEERS home">
           <img class="logo-img" src="../assets/logo/logo-primary-invert.png" alt="SGA ENGINEERS" width="220" height="64" />
