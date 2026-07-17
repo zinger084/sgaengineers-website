@@ -11,8 +11,11 @@ HANDOFF FILE (always keep this current):
 
 PICK UP HERE (next website session):
 - Read this file first, open the OneDrive edit workspace, then wait for Jared’s next request.
-- Session 2026-07-17: copy cleanup + team degrees; Jared said publish.
-- Latest published commit (playground → GitHub main → Vercel): 12d0e1f
+- Session 2026-07-17: LIGHT / HYBRID theme published to Vercel for comparison.
+- THEMES: css/THEME.md · Dark backup styles-dark.css · Light styles-light.css + active styles.css
+- Active edit site is LIGHT/HYBRID (warm paper + dark heroes/CTAs/footer). Dark is preserved.
+- To restore dark as live CSS: copy styles-dark.css over styles.css (see THEME.md).
+- Latest published commit on Vercel (still dark until light is published): 12d0e1f / 7bcfee8
   “Simplify public copy and add team education credentials.”
 - Live preview: https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
 - COPY TONE (locked): simpler words, sound like real people - not buzzword marketing titles.
@@ -106,6 +109,8 @@ LAST SESSION (2026-07-17):
 - Markets titles: “We work across many markets”, “How we help in key markets”
 - Selected work title: “Experience”; projects hero simplified
 - Published 12d0e1f to GitHub main via playground (Vercel auto-deploy)
+- LIGHT/HYBRID theme: styles.css + styles-light.css; full dark backup styles-dark.css
+  Dual header logos (logo-white-bg + invert over dark heroes). See css/THEME.md.
 - Standing rules unchanged: ask before publish; update this handoff when session ends
 
 Read this file, confirm context if useful, and wait for Jared’s next request.

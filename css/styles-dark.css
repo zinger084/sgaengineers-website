@@ -1,39 +1,32 @@
 /* ==========================================================================
-   SGA ENGINEERS - Site Redesign (LIGHT / HYBRID theme - active for preview)
+   SGA ENGINEERS - Site Redesign (dark theme)
    Formal professional AEC firm presentation
-
-   Hybrid: light paper surfaces + dark photo heroes, page heroes, CTAs, footer.
-   Full dark theme backup: css/styles-dark.css (restore by swapping files).
    ========================================================================== */
 
-/* Brand: Orange #B62C00 · Gray #BFBFBF · Blue #0077C8 · light paper + dark bands */
+/* Brand: Orange #B62C00 · Gray #BFBFBF · Blue #0077C8 · dark surfaces */
 :root {
-  --ink: #1c1c1c;
-  --ink-soft: #2a2a2a;
-  --ink-mid: #3a3a3a;
-  --ink-deep: #111111;
-  --slate: #5a5a5a;
-  --muted: #6e6e6e;
-  --line: rgba(0, 0, 0, 0.1);
-  --line-light: rgba(0, 0, 0, 0.07);
-  --paper: #f5f4f1;
-  --paper-warm: #ebe9e4;
-  --white: #ffffff;
+  --ink: #e6e6e6;
+  --ink-soft: #d4d4d4;
+  --ink-mid: #b8b8b8;
+  --ink-deep: #f2f2f2;
+  --slate: #9a9a9a;
+  --muted: #7a7a7a;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-light: rgba(255, 255, 255, 0.14);
+  --paper: #111111;
+  --paper-warm: #181818;
+  --white: #1c1c1c;
   --on-accent: #ffffff;
-  --on-dark: #f2f2f2;
-  --on-dark-soft: rgba(255, 255, 255, 0.78);
-  --on-dark-muted: rgba(255, 255, 255, 0.62);
-  --bg-ink: #121212;
-  --gray-brand: #6b6b6b;
-  --gray-brand-on-dark: #bfbfbf;
-  --accent: #b62c00;
-  --accent-hover: #9a2500;
-  --accent-soft: rgba(182, 44, 0, 0.1);
-  --blue: #0077c8;
-  --blue-hover: #005fa0;
-  --blue-soft: rgba(0, 119, 200, 0.1);
-  --teal: #0077c8;
-  --success: #0077c8;
+  --bg-ink: #0a0a0a;
+  --gray-brand: #bfbfbf;
+  --accent: #c43308;
+  --accent-hover: #e03d0c;
+  --accent-soft: rgba(196, 51, 8, 0.16);
+  --blue: #2a9bdb;
+  --blue-hover: #48b0eb;
+  --blue-soft: rgba(42, 155, 219, 0.14);
+  --teal: #2a9bdb;
+  --success: #2a9bdb;
 
   --font-sans: Candara, "Segoe UI", Calibri, "Trebuchet MS", sans-serif;
   --font-display: Candara, "Segoe UI", Calibri, "Trebuchet MS", sans-serif;
@@ -43,13 +36,13 @@
   --container-wide: 88rem;
   --radius: 0.2rem;
   --radius-lg: 0.5rem;
-  --shadow: 0 10px 28px rgba(20, 20, 20, 0.08);
-  --shadow-lg: 0 20px 48px rgba(20, 20, 20, 0.12);
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 56px rgba(0, 0, 0, 0.55);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --transition: 0.4s var(--ease);
   --transition-fast: 0.22s var(--ease);
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 *,
@@ -173,7 +166,7 @@ p {
 
 .section--ink {
   background: var(--bg-ink);
-  color: var(--on-dark);
+  color: var(--ink-deep);
 }
 
 .section--soft {
@@ -194,7 +187,7 @@ p {
 
 .section--ink .eyebrow,
 .page-hero .eyebrow {
-  color: var(--gray-brand-on-dark);
+  color: var(--gray-brand);
 }
 
 .section--ink .eyebrow::before,
@@ -269,7 +262,7 @@ p {
     border-color var(--transition-fast), transform var(--transition-fast),
     box-shadow var(--transition-fast);
   cursor: pointer;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08) inset;
 }
 
 .btn:hover {
@@ -302,7 +295,7 @@ p {
 
 .btn--ghost {
   background: transparent;
-  border-color: rgba(0, 0, 0, 0.18);
+  border-color: rgba(255, 255, 255, 0.22);
   color: var(--ink);
 }
 
@@ -314,7 +307,7 @@ p {
 
 .btn--ghost-light {
   background: transparent;
-  border-color: rgba(255, 255, 255, 0.45);
+  border-color: rgba(255, 255, 255, 0.4);
   color: var(--on-accent);
 }
 
@@ -325,12 +318,12 @@ p {
 }
 
 .btn--white {
-  background: var(--white);
+  background: var(--on-accent);
   color: var(--bg-ink);
 }
 
 .btn--white:hover {
-  background: #e8e8e8;
+  background: var(--gray-brand);
   color: var(--bg-ink);
 }
 
@@ -358,14 +351,13 @@ p {
 
 .site-header.is-scrolled,
 .site-header.is-solid {
-  background: rgba(245, 244, 241, 0.94);
+  background: rgba(12, 12, 12, 0.92);
   backdrop-filter: saturate(1.1) blur(16px);
   -webkit-backdrop-filter: saturate(1.1) blur(16px);
-  box-shadow: 0 8px 24px rgba(20, 20, 20, 0.08);
-  border-bottom-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
-/* Over dark heroes: light nav text until scroll solidifies light bar */
 .site-header.is-over-dark:not(.is-scrolled):not(.is-solid) .nav-link,
 .site-header.is-over-dark:not(.is-scrolled):not(.is-solid) .nav-toggle {
   color: var(--on-accent);
@@ -386,40 +378,12 @@ p {
   line-height: 0;
 }
 
-.logo-mark {
-  position: relative;
-  display: block;
-  line-height: 0;
-}
-
 .logo-img {
   height: 2.85rem;
   width: auto;
   max-width: min(220px, 52vw);
   object-fit: contain;
   transition: opacity var(--transition-fast), transform var(--transition-fast);
-}
-
-/* Light theme: dark logo on light bar; invert logo over dark photo heroes */
-.logo-img--on-dark {
-  display: none;
-}
-
-.site-header.is-over-dark:not(.is-scrolled):not(.is-solid) .logo-img--on-light {
-  display: none;
-}
-
-.site-header.is-over-dark:not(.is-scrolled):not(.is-solid) .logo-img--on-dark {
-  display: block;
-}
-
-.site-header.is-over-dark:not(.is-scrolled):not(.is-solid) .logo-img {
-  filter: none;
-}
-
-.site-header.is-scrolled .logo-img,
-.site-header.is-solid .logo-img {
-  filter: none;
 }
 
 .logo:hover .logo-img {
@@ -3510,193 +3474,4 @@ body.site-hscroll-DISABLED .site-header .logo-img {
 
 .hscroll-panel--ink .process-step h3 {
   color: var(--on-accent);
-}
-
-/* ==========================================================================
-   LIGHT / HYBRID polish (overrides hard-coded dark chrome for light paper)
-   Dark photo heroes, page heroes, film panels, CTAs, contact panel, footer
-   stay dark on purpose. Full dark theme: styles-dark.css
-   ========================================================================== */
-
-::selection {
-  background: rgba(0, 119, 200, 0.22);
-  color: var(--ink-deep);
-}
-
-.section-title {
-  color: var(--ink-deep);
-}
-
-.section--ink .section-title,
-.section--ink .section-head .section-title {
-  color: var(--on-dark);
-}
-
-.section--ink .section-lead,
-.section--ink .prose p,
-.section--ink p {
-  color: var(--on-dark-soft);
-}
-
-.section--ink a.text-link {
-  color: #5eb8ef;
-}
-
-.btn--ghost {
-  box-shadow: none;
-}
-
-/* Ghost buttons sitting on dark bands / heroes */
-.section--ink .btn--ghost,
-.hero .btn--ghost,
-.film-panel .btn--ghost,
-.page-hero .btn--ghost,
-.cta-strip .btn--ghost {
-  border-color: rgba(255, 255, 255, 0.35);
-  color: var(--on-accent);
-}
-
-.section--ink .btn--ghost:hover,
-.hero .btn--ghost:hover,
-.film-panel .btn--ghost:hover,
-.page-hero .btn--ghost:hover,
-.cta-strip .btn--ghost:hover {
-  border-color: var(--blue);
-  background: var(--blue);
-  color: var(--on-accent);
-}
-
-.film-panel__content .eyebrow {
-  color: var(--gray-brand-on-dark);
-}
-
-.film-panel__content p {
-  color: var(--on-dark-soft);
-}
-
-.hero__kicker,
-.hero .eyebrow {
-  color: var(--gray-brand-on-dark);
-}
-
-.hs-rail {
-  scrollbar-color: var(--accent) rgba(0, 0, 0, 0.08);
-}
-
-.hs-rail::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.06);
-}
-
-/* Cards / surfaces on light paper */
-.service-card,
-.audience-card,
-.outcome-item,
-.perk,
-.job-card,
-.faq-item,
-.voice-card,
-.case-card,
-.team-card,
-.market-spotlight-card,
-.practice-card,
-.cred-block,
-.process-step {
-  background: var(--white);
-}
-
-.market-chip {
-  background: var(--white);
-  border-color: var(--line);
-  color: var(--ink);
-}
-
-.market-chip:hover,
-.market-chip--featured {
-  border-color: var(--blue);
-}
-
-/* Mobile nav drawer: light panel */
-@media (max-width: 960px) {
-  .nav-links {
-    background: rgba(245, 244, 241, 0.98);
-    border-bottom-color: rgba(0, 0, 0, 0.08);
-  }
-
-  .site-header.is-over-dark:not(.is-scrolled) .nav-links {
-    background: rgba(245, 244, 241, 0.98);
-  }
-
-  .site-header.is-over-dark:not(.is-scrolled) .nav-links .nav-link {
-    color: var(--ink);
-  }
-}
-
-/* Keep dark contact side panel readable */
-.contact-panel {
-  color: var(--on-accent);
-}
-
-.contact-panel p,
-.contact-link strong,
-.contact-checklist__label {
-  color: var(--on-dark-muted) !important;
-}
-
-.contact-link__text,
-.contact-checklist ul {
-  color: var(--on-dark-soft);
-}
-
-/* CTA / footer already dark; ensure lead text stays light */
-.cta-strip p {
-  color: var(--on-dark-soft);
-}
-
-.site-footer {
-  color: var(--on-dark-soft);
-  border-top-color: var(--gray-brand-on-dark);
-}
-
-/* Forms on light paper */
-input,
-textarea,
-select {
-  background: var(--white);
-  color: var(--ink);
-  border-color: var(--line);
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: var(--muted);
-}
-
-/* Practice / misc dark-tint leftovers on light */
-.practice-examples {
-  background: var(--white);
-  border-color: var(--line);
-}
-
-.practice-examples__note {
-  color: var(--slate);
-}
-
-.filter-note {
-  background: var(--white);
-  border-color: var(--line);
-  color: var(--slate);
-}
-
-/* Nav default color on light pages */
-.nav-link {
-  color: var(--ink);
-}
-
-.nav-toggle {
-  color: var(--ink);
-}
-
-.hscroll-panel--film .eyebrow,
-.hscroll-panel--film .hero__kicker {
-  color: var(--gray-brand-on-dark);
 }
