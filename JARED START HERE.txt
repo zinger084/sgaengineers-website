@@ -64,7 +64,10 @@ BRAND / RULES:
 - Homepage: push tech, responsiveness, integration, speed, flexibility (small-firm strengths)
 - Do NOT put Canton, Ohio on the homepage opening/footer; location OK on About/Contact
 - Mission critical / data centers are a strength but must not dominate the first screen
-- Logo site-wide: assets/logo/logo-primary-invert.png
+- Logo site-wide: transparent PNGs only (no white/black box)
+  Light bars: assets/logo/logo-on-light.png (close-crop, transparent)
+  Dark bars/heroes/footer: assets/logo/logo-on-dark.png (invert, transparent)
+  Source masters: Marketing\Logo\*transparent background close crop*
 - Tagline: Design with Integrity.
 - Contact: engineer@sgaengineers.com · info@sgaengineers.com
 - No public main phone number published yet (callback via form if provided)
