@@ -26,7 +26,7 @@ PICK UP HERE (next website session):
 - Do not re-add privacy disclaimers (“names withheld”, “anonymized by design”, etc.).
 - Do not re-add Unlimited PTO (employees have established PTO amounts).
 - Do not re-add: chase-projects/values line; black-box-after-award; “not jargon walls”.
-- Team cards: show engineering education under each person (from firm resumes).
+- Team cards: show school only under each person (no B.S./BSME/BSEE/degree titles).
 - Homepage tone: tech, speed, flexibility - NOT data-center-only, NO Canton on home.
 - Contact: mailto (FormSubmit failed with M365). Working and liked.
 - Mike Ludwig is NOT on staff - do not add him.
@@ -108,7 +108,7 @@ SUGGESTED NEXT (when Jared is ready - do not start unprompted):
 LAST SESSION (2026-07-17):
 - Copy cleanup per Jared: simpler language, no privacy disclaimers, no Unlimited PTO
 - Removed chase-projects line; black-box-after-award; “not jargon walls”
-- Team education lines on About (degrees from Master\Resumes)
+- Team education lines on About: school names only (no degree titles)
 - Markets titles: “We work across many markets”, “How we help in key markets”
 - Selected work title: “Experience”; projects hero simplified
 - Published 12d0e1f to GitHub main via playground (Vercel auto-deploy)
