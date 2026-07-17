@@ -2628,12 +2628,14 @@ a.text-link:hover {
   counter-reset: step;
 }
 
+/* White cards always — dark body text (never light-on-white) */
 .process-step {
   position: relative;
   padding: 1.5rem 1.35rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--line-light);
+  background: var(--white);
+  border: 1px solid var(--line);
   border-radius: var(--radius-lg);
+  color: var(--ink);
 }
 
 .process-step::before {
@@ -2651,20 +2653,12 @@ a.text-link:hover {
   font-size: 1.15rem;
   font-weight: 650;
   margin-bottom: 0.5rem;
+  color: var(--ink-deep);
 }
 
 .process-step p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.95rem;
-}
-
-.section:not(.section--ink) .process-step {
-  background: var(--white);
-  border-color: var(--line);
-}
-
-.section:not(.section--ink) .process-step p {
   color: var(--slate);
+  font-size: 0.95rem;
 }
 
 .faq-list {
@@ -3873,17 +3867,19 @@ body.site-hscroll-DISABLED .site-header .logo-img {
   color: var(--gray-brand);
 }
 
+/* Horizontal-scroll ink panels: same white cards + dark type as main process steps */
 .hscroll-panel--ink .process-step {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.12);
+  background: var(--white);
+  border-color: var(--line);
+  color: var(--ink);
 }
 
 .hscroll-panel--ink .process-step p {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--slate);
 }
 
 .hscroll-panel--ink .process-step h3 {
-  color: var(--on-accent);
+  color: var(--ink-deep);
 }
 
 /* ==========================================================================
@@ -3906,9 +3902,10 @@ body.site-hscroll-DISABLED .site-header .logo-img {
   color: var(--on-dark);
 }
 
+/* Light section copy on ink bands only — do NOT use bare .section--ink p
+   (that painted process-step card body light-on-white and made it unreadable). */
 .section--ink .section-lead,
-.section--ink .prose p,
-.section--ink p {
+.section--ink .prose p {
   color: var(--on-dark-soft);
 }
 
@@ -3976,6 +3973,30 @@ body.site-hscroll-DISABLED .site-header .logo-img {
 .cred-block,
 .process-step {
   background: var(--white);
+}
+
+/* "How engagement works" and any process-step on ink: force contrast
+   (white card + dark titles/body — last word so hybrid polish cannot invert). */
+.section--ink .process-step,
+.hscroll-panel--ink .process-step {
+  background: #ffffff;
+  border-color: var(--line);
+  color: #1c1c1c;
+}
+
+.section--ink .process-step h3,
+.hscroll-panel--ink .process-step h3 {
+  color: #111111;
+}
+
+.section--ink .process-step p,
+.hscroll-panel--ink .process-step p {
+  color: #5a5a5a;
+}
+
+.section--ink .process-step::before,
+.hscroll-panel--ink .process-step::before {
+  color: var(--accent);
 }
 
 .market-chip {
