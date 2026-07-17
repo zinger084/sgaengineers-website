@@ -17,7 +17,9 @@ PICK UP HERE (next website session):
   Prior: 74b94eb Ryan/Caleb Mount Union; 9247eac light/hybrid; 12d0e1f copy cleanup.
 - THEMES: css/THEME.md · Dark backup styles-dark.css · Light styles-light.css + active styles.css
 - Active site is LIGHT/HYBRID (warm paper + dark heroes/CTAs/footer). Dark is preserved.
-- To restore dark as live CSS: copy styles-dark.css over styles.css (see THEME.md), then publish.
+- THEME: Jared likes the major format a lot; still in between pure white/light vs full dark.
+  Keep hybrid as default until he picks; dark restore = styles-dark.css over styles.css (THEME.md).
+- Positioning line to keep: “solutions-minded engineers” / “help solve problems, not create more.”
 - Live preview: https://sgaengineers-website.vercel.app/ (hard-refresh Ctrl+F5)
 - COPY TONE (locked): simpler words, sound like real people - not buzzword marketing titles.
   Examples fixed: “We work across many markets”, “How we help in key markets”, “Experience”.
@@ -112,6 +114,8 @@ LAST SESSION (2026-07-17):
 - Published 12d0e1f to GitHub main via playground (Vercel auto-deploy)
 - LIGHT/HYBRID theme published 9247eac: styles.css + styles-light.css; dark backup styles-dark.css
   Dual header logos (logo-white-bg + invert over dark heroes). See css/THEME.md.
+- Added sitewide positioning: solutions-minded engineers; help solve problems, not create more
+  (home, about, expertise, contact). Format kept; theme still optional light vs dark.
 - Standing rules unchanged: ask before publish; update this handoff when session ends
 
 Read this file, confirm context if useful, and wait for Jared’s next request.
